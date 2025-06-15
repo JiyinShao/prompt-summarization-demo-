@@ -4,16 +4,16 @@ This repository is part of my Research Project 7100A at the University of Adelai
 
 ## Project Structure
 
-prompt-summarization-demo-/
-│
-├── prompt/ # Contains prompt text files
-│ ├── Zero-Shot-Prompt.ipynb
-│ ├── Few-Shot-Prompt.ipynb
-│ ├── Instruction-Based-Prompt.ipynb
-│ ├── Pattern-Based-Prompt.ipynb
-│ └── Target-Audience-Prompt.ipynb
-│
-├── README.md # Project overview (this file)
+prompt-summarization-demo-/<br>
+│<br>
+├── prompt/ # Contains prompt text files<br>
+│ ├── Zero-Shot-Prompt.ipynb<br>
+│ ├── Few-Shot-Prompt.ipynb<br>
+│ ├── Instruction-Based-Prompt.ipynb<br>
+│ ├── Pattern-Based-Prompt.ipynb<br>
+│ └── Target-Audience-Prompt.ipynb<br>
+│<br>
+├── README.md # Project overview (this file)<br>
 
 
 ## Current Progress
