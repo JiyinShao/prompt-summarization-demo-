@@ -18,9 +18,9 @@ for sample in samples:
     output = query_llm(prompt)
     fre_score = evaluate_fre(output)
 
-    print(f"📝 Prompt:\n{prompt}\n")
-    print(f"📤 Output:\n{output}\n")
-    print(f"📊 FRE Score: {fre_score:.2f}\n{'='*50}\n")
+    print(f"Prompt:\n{prompt}\n")
+    print(f"Output:\n{output}\n")
+    print(f"FRE Score: {fre_score:.2f}\n{'='*50}\n")
 
     results.append({
         "id": sample["id"],
