@@ -23,16 +23,6 @@ prompt-summarization-demo/<br>
 
 ## Current Progress
 
-## Current Progress
-
-- **Baseline prompt strategies implemented**  
-  Designed and tested 5 core prompt styles:
-  - Zero-shot  
-  - Few-shot  
-  - Instruction-based  
-  - Pattern-based  
-  - Target audience–oriented
-
 - **Initial pipeline structure completed**  
   - Prompt → LLM (T5) → Output → FRE Evaluation → JSON Logging
   - Modular design allows for future integration of mutation strategies and ROUGE evaluation
@@ -43,10 +33,25 @@ prompt-summarization-demo/<br>
   - Allow multi-turn mutation loops for underperforming outputs  
   - Build comparative visualization of different prompt strategies
 
-
 ## Usage
 
-Right now this repo is only for storing prompt designs. Notebook and evaluation will be uploaded soon.
+This repository contains both prompt design notebooks and a runnable pipeline for evaluating summarization quality using T5.
+
+### Setup
+
+1. **Clone the repository**
+   git clone https://github.com/JiyinShao/prompt-summarization-demo.git
+   cd prompt-summarization-demo
+2. **Install dependencies**
+   pip install -r requirements.txt
+3. **Run the summarization and evaluation pipeline**
+   python main.py
+
+This will:
+ - Load CNN-style news articles from data/input_texts.json
+ - Generate summaries using T5 and your selected prompt style
+ - Evaluate outputs using the Flesch Reading Ease (FRE) score
+ - Save all outputs and scores to results/final_outputs.json
 
 ## Contact
 
