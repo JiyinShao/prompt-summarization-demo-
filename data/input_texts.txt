@@ -1,0 +1,7 @@
+[
+  {
+    "id": "cnn_001",
+    "article": "President Obama met with top congressional leaders today to discuss the ongoing budget negotiations. The talks come as both parties try to avoid a government shutdown.",
+    "reference": "Obama met congressional leaders to avoid a shutdown."
+  }
+]
