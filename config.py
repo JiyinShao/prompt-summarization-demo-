@@ -1,0 +1,2 @@
+FRE_THRESHOLD = 60.0 
+MAX_ITER = 3  
