@@ -6,21 +6,21 @@ This repository is part of my Research Project 7100A at the University of Adelai
 
 prompt-summarization-demo/<br>
 │<br>
-├── main.py # Entry point for running prompt → summary → evaluation<br>
-├── config.py # Configuration file for thresholds, model settings, etc.<br>
-├── prompt_generator.py # Loads and renders prompt templates<br>
-├── llm_interface.py # Interface to T5 model for summary generation<br>
-├── evaluator.py # FRE-based readability evaluation<br>
-├── requirements.txt # Required Python packages<br>
-├── run_pipeline.ipynb # Run this notebook in Colab<br>
+├── main.py <br>
+├── config.py <br>
+├── prompt_generator.py <br>
+├── llm_interface.py <br>
+├── evaluator.py <br>
+├── requirements.txt <br>
+├── run_pipeline.ipynb <br>
 │<br>
 ├── data/<br>
-│ └── input_texts.json # Sample input from CNN dataset (article + reference)<br>
+│ └── input_texts.json <br>
 │<br>
 ├── results/<br>
-│ └── final_outputs.json # Generated summaries + evaluation results<br>
+│ └── final_outputs.json <br>
 │<br>
-├── README.md # Project overview (this file)<br>
+├── README.md <br>
 
 ## Current Progress
 
