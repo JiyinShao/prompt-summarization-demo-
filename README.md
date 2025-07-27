@@ -12,7 +12,7 @@ prompt-summarization-demo/<br>
 ├── llm_interface.py # Interface to T5 model for summary generation<br>
 ├── evaluator.py # FRE-based readability evaluation<br>
 ├── requirements.txt # Required Python packages<br>
-├── run_pipeline # Run this notebook in Colab<br>
+├── run_pipeline.ipynb # Run this notebook in Colab<br>
 │<br>
 ├── data/<br>
 │ └── input_texts.json # Sample input from CNN dataset (article + reference)<br>
