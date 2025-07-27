@@ -12,6 +12,7 @@ prompt-summarization-demo/<br>
 ├── llm_interface.py # Interface to T5 model for summary generation<br>
 ├── evaluator.py # FRE-based readability evaluation<br>
 ├── requirements.txt # Required Python packages<br>
+├── run_pipeline # Run this notebook in Colab<br>
 │<br>
 ├── data/<br>
 │ └── input_texts.json # Sample input from CNN dataset (article + reference)<br>
@@ -40,8 +41,8 @@ This repository contains both prompt design notebooks and a runnable pipeline fo
 ### Setup
 
 1. **Clone the repository**
-   git clone https://github.com/JiyinShao/prompt-summarization-demo.git
-   cd prompt-summarization-demo
+   git clone https://github.com/JiyinShao/prompt-summarization-demo-.git
+   cd prompt-summarization-demo-
 2. **Install dependencies**
    pip install -r requirements.txt
 3. **Run the summarization and evaluation pipeline**
