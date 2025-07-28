@@ -11,4 +11,8 @@ def evaluate_rouge(output, reference):
     return {
         "rouge1": round(scores["rouge1"].fmeasure, 4),
         "rougeL": round(scores["rougeL"].fmeasure, 4)
+<<<<<<< HEAD
     }
+=======
+    }
+>>>>>>> 524bcf1 (Initial commit)

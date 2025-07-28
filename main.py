@@ -4,7 +4,12 @@ from llm_interface import query_llm
 from evaluator import evaluate_fre, evaluate_rouge
 from config import FRE_THRESHOLD
 
+<<<<<<< HEAD
 # 1. Load input data
+=======
+# 1. Load input data 
+# .\venv\Scripts\activate
+>>>>>>> 524bcf1 (Initial commit)
 with open("data/input_texts.json", "r", encoding="utf-8") as f:
     samples = json.load(f)
 
@@ -36,4 +41,8 @@ for sample in samples:
 
 # 3. Save results
 with open("results/final_outputs.json", "w", encoding="utf-8") as f:
+<<<<<<< HEAD
     json.dump(results, f, indent=2)
+=======
+    json.dump(results, f, indent=2)
+>>>>>>> 524bcf1 (Initial commit)

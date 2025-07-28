@@ -2,4 +2,8 @@ transformers
 torch
 sentencepiece
 textstat
+<<<<<<< HEAD
 rouge-score
+=======
+rouge-score
+>>>>>>> 524bcf1 (Initial commit)
