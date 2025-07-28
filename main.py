@@ -21,8 +21,8 @@ for sample in samples:
 
     print(f"Prompt:\n{prompt}\n")
     print(f"Output:\n{output}\n")
-    print(f"FRE Score: {fre_score:.2f}\n{'='*50}\n")
-    print(f"ROUGE-1: {rouge_scores['rouge1']:.4f}, ROUGE-L: {rouge_scores['rougeL']:.4f}")
+    print(f"FRE Score: {fre_score:.2f}\n")
+    print(f"ROUGE-1: {rouge_scores['rouge1']:.4f}, ROUGE-L: {rouge_scores['rougeL']:.4f}\n{'='*50}\n")
 
     results.append({
     "id": sample["id"],
