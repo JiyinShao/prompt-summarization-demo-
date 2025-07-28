@@ -17,7 +17,7 @@ for sample in samples:
     prompt = generate_prompt(article)
     output = query_llm(prompt)
     fre_score = evaluate_fre(output)
-    rouge_score = evaluate_rouge(output, reference)
+    rouge_scores = evaluate_rouge(output, reference)
 
     print(f"Prompt:\n{prompt}\n")
     print(f"Output:\n{output}\n")
