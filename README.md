@@ -25,12 +25,11 @@ prompt-summarization-demo/<br>
 ## Current Progress
 
 - **Initial pipeline structure completed**  
-  - Prompt → LLM (T5) → Output → FRE Evaluation → JSON Logging
+  - Prompt → LLM (T5) → Output → ROUGE and FRE Evaluation → JSON Logging
   - Modular design allows for future integration of mutation strategies and ROUGE evaluation
 
 - **Next Steps (Planned)**  
   - Implement multiple prompt mutation strategies  
-  - Add ROUGE-based quality scoring  
   - Allow multi-turn mutation loops for underperforming outputs  
   - Build comparative visualization of different prompt strategies
 
@@ -51,7 +50,7 @@ This repository contains both prompt design notebooks and a runnable pipeline fo
 This will:
  - Load CNN-style news articles from data/input_texts.json
  - Generate summaries using T5 and your selected prompt style
- - Evaluate outputs using the Flesch Reading Ease (FRE) score
+ - Evaluate outputs using the ROUGE and Flesch Reading Ease (FRE) score
  - Save all outputs and scores to results/final_outputs.json
 
 ## Contact
