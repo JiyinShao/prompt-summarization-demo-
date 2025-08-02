@@ -1,0 +1,47 @@
+[
+  {
+    "id": "xsum_001",
+    "dataset": "xsum",
+    "template": "zero_shot.txt",
+    "output": ":: a man has been arrested after a suspicious package was found at a busy shopping centre. Police say no one was hurt.",
+    "fre": 72.61545454545457,
+    "rouge1": 0.5161,
+    "rougeL": 0.5161
+  },
+  {
+    "id": "xsum_001",
+    "dataset": "xsum",
+    "template": "few_shot.txt",
+    "output": "article: The city council has passed a new law that bans smoking in public parks. the decision comes after months of public debate and health expert testimony.",
+    "fre": 61.53250000000003,
+    "rouge1": 0.1111,
+    "rougeL": 0.0556
+  },
+  {
+    "id": "xsum_001",
+    "dataset": "xsum",
+    "template": "instruction_based.txt",
+    "output": "A man has been arrested after a suspicious package was found at a busy shopping centre.",
+    "fre": 58.4075,
+    "rouge1": 0.64,
+    "rougeL": 0.64
+  },
+  {
+    "id": "xsum_001",
+    "dataset": "xsum",
+    "template": "pattern_based.txt",
+    "output": ":: a man has been arrested after a suspicious package was found at a busy shopping centre. Police say no one was hurt.",
+    "fre": 72.61545454545457,
+    "rouge1": 0.5161,
+    "rougeL": 0.5161
+  },
+  {
+    "id": "xsum_001",
+    "dataset": "xsum",
+    "template": "target_audience.txt",
+    "output": "a suspicious package was found at a busy shopping centre. Police say no one was hurt.",
+    "fre": 77.1025,
+    "rouge1": 0.4,
+    "rougeL": 0.4
+  }
+]

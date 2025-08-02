@@ -1,41 +1,50 @@
 # Prompt Summarization Demo
 
-This repository is part of my Research Project 7100A at the University of Adelaide. It explores how different prompt engineering strategies affect summarization performance using large language models (LLMs).
+This repository is part of my **Research Project 7100A** at the **University of Adelaide**. It explores how different **prompt engineering strategies** influence the quality of text summarization using **large language models (LLMs)** such as T5.
 
 ## Project Structure
 
-prompt-summarization-demo/<br>
+prompt-summarization-demo-/<br>
 │<br>
-├── main.py <br>
-├── config.py <br>
-├── prompt_generator.py <br>
-├── llm_interface.py <br>
-├── evaluator.py <br>
-├── requirements.txt <br>
-├── run_pipeline.ipynb <br>
+├── main.py # Entry point for running full prompt→LLM→eval pipeline<br>
+├── config.py # Configurable settings (e.g., model, prompt, dataset)<br>
+├── data_loader.py # Data loading utilities (CNN, XSUM, etc.)<br>
+├── llm_interface.py # T5 model wrapper for text generation<br>
+├── evaluator.py # Evaluation: ROUGE and FRE scoring<br>
 │<br>
 ├── data/<br>
-│ └── input_texts.json <br>
+│ ├── input_texts.json # CNN input samples<br>
+│ └── xsum_sample.json # XSUM input samples<br>
+│<br>
+├── prompts/<br>
+│ └── prompt_templates/<br>
+│ ├── zero_shot.txt<br>
+│ ├── few_shot.txt<br>
+│ ├── instruction_based.txt<br>
+│ ├── pattern_based.txt<br>
+│ └── target_audience.txt # 5 prompt strategies used in current experiment<br>
 │<br>
 ├── results/<br>
-│ └── final_outputs.json <br>
+│ ├── cnn_prompt_eval.json # Evaluation output for CNN dataset<br>
+│ └── xsum_prompt_eval.json # Evaluation output for XSUM dataset<br>
 │<br>
-├── README.md <br>
+├── requirements.txt # Python package dependencies<br>
+├── README.md<br>
 
 ## Current Progress
 
-- **Initial pipeline structure completed**  
-  - Prompt → LLM (T5) → Output → ROUGE and FRE Evaluation → JSON Logging
-  - Modular design allows for future integration of mutation strategies and ROUGE evaluation
-
-- **Next Steps (Planned)**  
-  - Implement multiple prompt mutation strategies  
-  - Allow multi-turn mutation loops for underperforming outputs  
-  - Build comparative visualization of different prompt strategies
-
-## Usage
-
-This repository contains both prompt design notebooks and a runnable pipeline for evaluating summarization quality using T5.
+- Prompt-to-summary pipeline using **T5-base**
+- Supports **five prompting strategies**:
+  - zero_shot.txt
+  - few_shot.txt
+  - instruction_based.txt
+  - pattern_based.txt
+  - target_audience.txt
+- Evaluation using:
+  - **ROUGE-1**
+  - **ROUGE-L**
+  - **Flesch Reading Ease**
+- Automatic output saving in structured JSON format
 
 ### Setup
 
@@ -48,10 +57,11 @@ This repository contains both prompt design notebooks and a runnable pipeline fo
    python main.py
 
 This will:
- - Load CNN-style news articles from data/input_texts.json
- - Generate summaries using T5 and your selected prompt style
- - Evaluate outputs using the ROUGE and Flesch Reading Ease (FRE) score
- - Save all outputs and scores to results/final_outputs.json
+ - Load selected dataset (data/input_texts.json or xsum_sample.json)
+ - Apply all five prompt strategies
+ - Generate summaries using T5-base model
+ - Evaluate outputs using the ROUGE and FRE score
+ - Save all outputs and scores to results/cnn_prompt_eval.json and results/xsum_prompt_eval.json
 
 ## Contact
 

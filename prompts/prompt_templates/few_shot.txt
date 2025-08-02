@@ -1,0 +1,19 @@
+Here are some examples of article-summary pairs:
+
+Article:
+The city council has passed a new law that bans smoking in all public parks. The decision came after months of public debate and health expert testimony.
+
+Summary:
+City council bans smoking in public parks after extended debate.
+
+Article:
+A rare snowstorm hit southern California yesterday, causing major traffic delays and school closures. Weather officials say it's the heaviest snowfall in the region in over 20 years.
+
+Summary:
+Southern California hit by rare snowstorm, closing schools and delaying traffic.
+
+Now summarize the following article:
+
+{{article}}
+
+Summary:

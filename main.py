@@ -1,39 +1,46 @@
-import json
 from prompt_generator import generate_prompt
+from data_loader import load_dataset
 from llm_interface import query_llm
 from evaluator import evaluate_fre, evaluate_rouge
-from config import FRE_THRESHOLD
+import json
+import os
 
-# 1. Load input data
-with open("data/input_texts.json", "r", encoding="utf-8") as f:
-    samples = json.load(f)
+datasets = ["cnn", "xsum"]
+prompt_templates = [
+    "zero_shot.txt",
+    "few_shot.txt",
+    "instruction_based.txt",
+    "pattern_based.txt",
+    "target_audience.txt"
+]
 
-results = []
+os.makedirs("results", exist_ok=True)
 
-# 2. Process each article
-for sample in samples:
-    article = sample["article"]
-    reference = sample["reference"]
-    prompt = generate_prompt(article)
-    output = query_llm(prompt)
-    fre_score = evaluate_fre(output)
-    rouge_scores = evaluate_rouge(output, reference)
+for dataset_name in datasets:
+    samples = load_dataset(dataset_name)
 
-    print(f"Prompt:\n{prompt}\n")
-    print(f"Output:\n{output}\n")
-    print(f"FRE Score: {fre_score:.2f}\n")
-    print(f"ROUGE-1: {rouge_scores['rouge1']:.4f}, ROUGE-L: {rouge_scores['rougeL']:.4f}\n{'='*50}\n")
+    results = []
 
-    results.append({
-    "id": sample["id"],
-    "prompt": prompt,
-    "output": output,
-    "reference": reference,
-    "fre_score": fre_score,
-    "rouge1": rouge_scores["rouge1"],
-    "rougeL": rouge_scores["rougeL"]
-})
+    for template_name in prompt_templates:
+        for sample in samples:
+            prompt = generate_prompt(sample["article"], template_file=template_name)
+            output = query_llm(prompt)
 
-# 3. Save results
-with open("results/final_outputs.json", "w", encoding="utf-8") as f:
-    json.dump(results, f, indent=2)
+            fre = evaluate_fre(output)
+            rouge = evaluate_rouge(output, sample["reference"])
+
+            results.append({
+                "id": sample["id"],
+                "dataset": dataset_name,
+                "template": template_name,
+                "output": output,
+                "fre": fre,
+                "rouge1": rouge["rouge1"],
+                "rougeL": rouge["rougeL"]
+            })
+
+    result_file = f"results/{dataset_name}_prompt_eval.json"
+    with open(result_file, "w", encoding="utf-8") as f:
+        json.dump(results, f, indent=2)
+
+    print(f"[✓] Saved results to {result_file}")
