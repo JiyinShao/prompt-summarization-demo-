@@ -1,0 +1,3 @@
+Please summarize the following article in two sentences using clear academic English:
+
+{text}

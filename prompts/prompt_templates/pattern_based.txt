@@ -1,0 +1,8 @@
+Summarize the article using bullet points, focusing only on the key facts:
+
+- 
+- 
+- 
+
+Article:
+{text}
