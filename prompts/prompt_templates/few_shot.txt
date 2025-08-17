@@ -12,8 +12,8 @@ A rare snowstorm hit southern California yesterday, causing major traffic delays
 Summary:
 Southern California hit by rare snowstorm, closing schools and delaying traffic.
 
-Now summarize the following article:
+Now there is an article:
 
-{{article}}
+{text}
 
-Summary:
+Generate the Summary according to the examples:

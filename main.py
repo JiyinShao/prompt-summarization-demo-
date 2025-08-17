@@ -2,6 +2,7 @@ from prompt_generator import generate_prompt
 from llm_interface import query_llm
 from evaluator import evaluate_fre, evaluate_rouge
 from datasets import load_dataset
+from mutations import MUTATIONS
 import json, os, time, random
 
 DATASETS = ["cnn", "xsum"]
@@ -13,6 +14,7 @@ PROMPT_TEMPLATES = [
     "target_audience.txt",
 ]
 SAMPLES_PER_DATASET = 5
+ACTIVE_MUTATIONS = ["none", "synonym_replacement", "prompt_rewriting"]
 
 os.makedirs("results", exist_ok=True)
 
@@ -35,29 +37,33 @@ def run_dataset(dataset_name: str, k: int):
     samples = load_samples(dataset_name, k)
     results = []
     t0 = time.time()
-    total = len(samples) * len(PROMPT_TEMPLATES)
+    total = len(samples) * len(PROMPT_TEMPLATES) * len(ACTIVE_MUTATIONS)
     step = 0
 
     for template_name in PROMPT_TEMPLATES:
-        for sample in samples:
-            step += 1
-            prompt = generate_prompt(sample["article"], template_file=template_name)
-            output = query_llm(prompt).lstrip(": ").strip()
-            fre = evaluate_fre(output)
-            rouge = evaluate_rouge(output, sample["reference"])
-            results.append({
-                "id": sample["id"],
-                "dataset": dataset_name,
-                "template": template_name,
-                "output": output,
-                "fre": fre,
-                "rouge1": rouge["rouge1"],
-                "rougeL": rouge["rougeL"],
-            })
-            if step % 5 == 0 or step == total:
-                print(f"[{dataset_name}] {step}/{total} done | elapsed: {time.time() - t0:.1f}s")
+        for m_name in ACTIVE_MUTATIONS:
+            m_fn = MUTATIONS[m_name]
+            for sample in samples:
+                step += 1
+                base_prompt = generate_prompt(sample["article"], template_file=template_name)
+                prompt = m_fn(base_prompt)
+                output = query_llm(prompt).lstrip(": ").strip()
+                fre = evaluate_fre(output)
+                rouge = evaluate_rouge(output, sample["reference"])
+                results.append({
+                    "id": sample["id"],
+                    "dataset": dataset_name,
+                    "template": template_name,
+                    "mutation": m_name,
+                    "output": output,
+                    "fre": fre,
+                    "rouge1": rouge["rouge1"],
+                    "rougeL": rouge["rougeL"],
+                })
+                if step % 10 == 0 or step == total:
+                    print(f"[{dataset_name}] {step}/{total} | elapsed: {time.time() - t0:.1f}s")
 
-    out_path = f"results/{dataset_name}_prompt_eval_{len(samples)}.json"
+    out_path = f"results/{dataset_name}_prompt_eval_{len(samples)}_with_mutations.json"
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(results, f, indent=2)
     print(f"[saved] {out_path}")

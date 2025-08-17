@@ -1,0 +1,16 @@
+template,mutation,rouge1,rougeL,fre
+few_shot.txt,none,0.1693,0.11229,84.84804866298099
+few_shot.txt,prompt_rewriting,0.19563,0.12166000000000002,79.25064112062934
+few_shot.txt,synonym_replacement,0.1759,0.11009,84.21878080583812
+instruction_based.txt,none,0.25217999999999996,0.14112,64.85294287006194
+instruction_based.txt,prompt_rewriting,0.2444,0.15242,67.1124372192601
+instruction_based.txt,synonym_replacement,0.24786999999999998,0.14794000000000002,64.17541283512534
+pattern_based.txt,none,0.24884,0.15669,66.5258533657877
+pattern_based.txt,prompt_rewriting,0.24884,0.15669,66.5258533657877
+pattern_based.txt,synonym_replacement,0.2569,0.15683,66.58682075709206
+target_audience.txt,none,0.26736,0.16847,64.40356542358205
+target_audience.txt,prompt_rewriting,0.26993999999999996,0.17197,64.8515682921217
+target_audience.txt,synonym_replacement,0.26322999999999996,0.16307,63.29792940989777
+zero_shot.txt,none,0.20439,0.11894,74.00499430232642
+zero_shot.txt,prompt_rewriting,0.27067,0.15738000000000002,65.8367933706162
+zero_shot.txt,synonym_replacement,0.21246,0.12701,72.0900030784175
