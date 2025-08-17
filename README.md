@@ -4,32 +4,24 @@ This repository is part of my **Research Project 7100A** at the **University of 
 
 ## Project Structure
 
-prompt-summarization-demo-/<br>
+prompt-summarization-demo-/ <br>
 │<br>
-├── main.py # Run the end-to-end prompt → LLM → evaluation pipeline<br>
-├── prompt_generator.py # Builds prompts from template files<br>
-├── llm_interface.py # T5 model wrapper (tokenize → generate → decode)<br>
-├── evaluator.py # ROUGE-1 / ROUGE-L / Flesch Reading Ease (FRE)<br>
-├── analyze_results.py # Aggregation & visualization (CSV + charts)<br>
+├── main.py                 # Run the end-to-end prompt → LLM → evaluation pipeline<br>
+├── prompt_generator.py      # Builds prompts from template files<br>
+├── llm_interface.py         # T5 model wrapper (tokenize → generate → decode)<br>
+├── evaluator.py             # ROUGE-1 / ROUGE-L / Flesch Reading Ease (FRE)<br>
+├── analyze_results.py       # Aggregation & visualization (CSV + charts)<br>
 │<br>
 ├── prompts/<br>
-│ ├── zero_shot.txt<br>
-│ ├── few_shot.txt<br>
-│ ├── instruction_based.txt<br>
-│ ├── pattern_based.txt<br>
-│ └── target_audience.txt # Five prompt strategies used in current experiments<br>
+│   ├── zero_shot.txt<br>
+│   ├── few_shot.txt<br>
+│   ├── instruction_based.txt<br>
+│   ├── pattern_based.txt<br>
+│   └── target_audience.txt   # Five prompt strategies used in current experiments<br>
 │<br>
-├── results/<br>
-│ ├── cnn_prompt_eval_5.json # Per-sample scores for CNN/DailyMail<br>
-│ ├── xsum_prompt_eval_5.json # Per-sample scores for XSum<br>
-│ ├── all_results.csv # Merged results (created by analyze_results.py)<br>
-│ ├── mean_by_template.csv # Mean scores by prompt template<br>
-│ ├── mean_by_template_mutation.csv (if mutation is added later)<br>
-│ ├── rouge1_by_template_dataset.png<br>
-│ ├── rougeL_by_template_dataset.png<br>
-│ └── fre_by_template_dataset.png # Summary charts (created by analyze_results.py)<br>
+├── results/                 # Evaluation outputs (see details below)<br>
 │<br>
-├── requirements.txt # Python dependencies<br>
+├── requirements.txt         # Python dependencies<br>
 └── README.md<br>
 
 ## Current Progress
@@ -43,8 +35,39 @@ prompt-summarization-demo-/<br>
   - **ROUGE-1**, **ROUGE-L**, **Flesch Reading Ease (FRE)**
 - **Batch execution**
   - By default: 5 articles × 5 prompts × 2 datasets = 50 evaluations
+- **Mutations (in progress)**
+  - Currently experimenting with Synonym replacement and Prompt rewriting
 - **Result aggregation & visualization**
   - Merged CSV + bar charts comparing templates across datasets
+
+### Results Directory
+The results/ folder contains three types of output:
+
+## 1. Raw per-sample results (JSON)
+- cnn_prompt_eval_5.json, xsum_prompt_eval_5.json
+- cnn_prompt_eval_5_with_mutations.json, xsum_prompt_eval_5_with_mutations.json
+Store individual evaluation results for each sample, including ROUGE and FRE.
+
+## 2. Aggregated tables (CSV)
+- all_results.csv — merged results across datasets
+- mean_by_template.csv — average scores by prompt type
+- mean_by_dataset_template.csv — average scores by dataset + prompt type
+- mean_by_template_mutation.csv, mean_by_dataset_template_mutation.csv — averages including mutated prompts
+Used for further statistical analysis or visualization.
+
+## 3. Visualizations (PNG)
+- ROUGE-1:
+  - rouge1_by_template_dataset.png
+  - rouge1_by_template_mutation.png (+ per-dataset variants)
+- ROUGE-L:
+  - rougeL_by_template_dataset.png
+  - rougeL_by_template_mutation.png (+ per-dataset variants)
+- FRE (Readability):
+  - fre_by_template_dataset.png
+  - fre_by_template_mutation.png (+ per-dataset variants)
+- Combined view:
+  - mean_scores_by_template_dual_axis.png
+Allow direct comparison of prompting strategies and mutation effects.
 
 ### Setup
 
@@ -55,15 +78,18 @@ prompt-summarization-demo-/<br>
    pip install -r requirements.txt
 3. **Run the summarization and evaluation pipeline**
    python main.py
+4. **Aggregate results & generate charts**
+   python analyze_results.py
 
 This will:
  - Load 5 test samples from each dataset (configurable)
  - Apply all five prompt templates
  - Generate summaries using T5
  - Score outputs with ROUGE-1 / ROUGE-L / FRE
- - Save per-dataset results to:
- - results/cnn_prompt_eval_5.json
- - results/xsum_prompt_eval_5.json
+ - Save results under results/
+ - Merge all results into results/all_results.csv
+ - Create summary CSVs (mean_by_template.csv, mean_by_dataset_template.csv, etc.)
+ - Export comparison charts (rouge1_by_template_dataset.png, fre_by_template_dataset.png, etc.)
 
 ## Contact
 
