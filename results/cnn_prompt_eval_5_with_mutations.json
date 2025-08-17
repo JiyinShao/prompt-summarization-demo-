@@ -1,0 +1,752 @@
+[
+  {
+    "id": "cnn_001",
+    "dataset": "cnn",
+    "template": "zero_shot.txt",
+    "mutation": "none",
+    "output": "hill was a black power militant who hijacked a plane in 1971 . he and two others were arrested and charged with murder . they were released after a year in prison . hill is now in a safe haven in the united states .",
+    "fre": 82.94344512195123,
+    "rouge1": 0.3333,
+    "rougeL": 0.1389
+  },
+  {
+    "id": "cnn_002",
+    "dataset": "cnn",
+    "template": "zero_shot.txt",
+    "mutation": "none",
+    "output": "teen suicide bomber is alleged to be cousin of iraqi leader, al-baghdadhi . he is believed to be one of two fighters who carried out suicide lorry attacks . australian fighter detonated van filled with barrels of explosives near armed forces . he was seen singing as he drove a vehicle packed with explosives towards checkpoint .",
+    "fre": 52.918325471698125,
+    "rouge1": 0.2523,
+    "rougeL": 0.1802
+  },
+  {
+    "id": "cnn_003",
+    "dataset": "cnn",
+    "template": "zero_shot.txt",
+    "mutation": "none",
+    "output": "scientists at the Ecole Polytechnique Federale de Lausanne (EPFL) in Switzerland have created artificial 'ghosts' by having signals mixed up in their brains . by having signals mixed up in their brains, volunteers were made to feel that a creepy 'presence' was behind them . they counted up to four phantoms positioned where no-one was standing . the experiment was so spoo",
+    "fre": 62.81290254237291,
+    "rouge1": 0.3261,
+    "rougeL": 0.1522
+  },
+  {
+    "id": "cnn_004",
+    "dataset": "cnn",
+    "template": "zero_shot.txt",
+    "mutation": "none",
+    "output": "president Barack Obama reportedly granted the CIA an exemption relaxing restrictions on drone strikes in Pakistan after enacting more stringent rules in 2013 . the waiver would have prevented the strike, possibly saving the lives of 73-year-old Warren Weinstein and 39-year-old Giovanni Lo Porto . 'we do believe that the operation did take out dangerous members of Al-Qaeda,' said the 73-year-old economic adviser . 'i",
+    "fre": 35.761559139784964,
+    "rouge1": 0.2981,
+    "rougeL": 0.1988
+  },
+  {
+    "id": "cnn_005",
+    "dataset": "cnn",
+    "template": "zero_shot.txt",
+    "mutation": "none",
+    "output": "the bones were wrapped in burlap and plaster to create a protective shell around the fossils, like a cast around a human's broken bones . the bones will be transported to Southern Methodist university for cleaning and assembly, which will likely take months . 'he likes playing in dirt as much as finding the fossils,' zookeeper tim Brys said .",
+    "fre": 62.87631578947371,
+    "rouge1": 0.3529,
+    "rougeL": 0.1513
+  },
+  {
+    "id": "cnn_001",
+    "dataset": "cnn",
+    "template": "zero_shot.txt",
+    "mutation": "synonym_replacement",
+    "output": "hill was a black power militant who hijacked a plane in 1971 . he and two others were arrested and charged with murder . they were released after a year in prison . hill is now in a safe haven in the united states .",
+    "fre": 82.94344512195123,
+    "rouge1": 0.3333,
+    "rougeL": 0.1389
+  },
+  {
+    "id": "cnn_002",
+    "dataset": "cnn",
+    "template": "zero_shot.txt",
+    "mutation": "synonym_replacement",
+    "output": "teen suicide bomber is alleged to be cousin of iraqi leader, al-baghdadhi . he is believed to be one of two fighters who carried out suicide lorry attacks . australian fighter detonated van filled with barrels of explosives near armed forces . he was seen singing as he drove a vehicle packed with explosives towards checkpoint .",
+    "fre": 52.918325471698125,
+    "rouge1": 0.2523,
+    "rougeL": 0.1802
+  },
+  {
+    "id": "cnn_003",
+    "dataset": "cnn",
+    "template": "zero_shot.txt",
+    "mutation": "synonym_replacement",
+    "output": "scientists at the Ecole Polytechnique Federale de Lausanne (EPFL) in Switzerland have created artificial 'ghosts' by having signals mixed up in their brains . by having signals mixed up in their brains, volunteers were made to feel that a creepy 'presence' was behind them . they counted up to four phantoms positioned where no-one was standing . the experiment was so spoo",
+    "fre": 62.81290254237291,
+    "rouge1": 0.3261,
+    "rougeL": 0.1522
+  },
+  {
+    "id": "cnn_004",
+    "dataset": "cnn",
+    "template": "zero_shot.txt",
+    "mutation": "synonym_replacement",
+    "output": "president Barack Obama reportedly granted the CIA an exemption relaxing restrictions on drone strikes in Pakistan after enacting more stringent rules in 2013 . the waiver would have prevented the strike, possibly saving the lives of 73-year-old Warren Weinstein and 39-year-old Giovanni Lo Porto . 'we do believe that the operation did take out dangerous members of Al-Qaeda,' said the 73-year-old economic adviser . 'i",
+    "fre": 35.761559139784964,
+    "rouge1": 0.2981,
+    "rougeL": 0.1988
+  },
+  {
+    "id": "cnn_005",
+    "dataset": "cnn",
+    "template": "zero_shot.txt",
+    "mutation": "synonym_replacement",
+    "output": "the bones were wrapped in burlap and plaster to create a protective shell around the fossils, like a cast around a human's broken bones . the bones will be transported to Southern Methodist university for cleaning and assembly, which will likely take months . 'he likes playing in dirt as much as finding the fossils,' zookeeper tim Brys said .",
+    "fre": 62.87631578947371,
+    "rouge1": 0.3529,
+    "rougeL": 0.1513
+  },
+  {
+    "id": "cnn_001",
+    "dataset": "cnn",
+    "template": "zero_shot.txt",
+    "mutation": "prompt_rewriting",
+    "output": "hill was a black power militant who hijacked a plane in 1971 . he is now the last living member of the hijackers . he says he is fine with his extradition to the united states .",
+    "fre": 78.38460784313727,
+    "rouge1": 0.3385,
+    "rougeL": 0.1538
+  },
+  {
+    "id": "cnn_002",
+    "dataset": "cnn",
+    "template": "zero_shot.txt",
+    "mutation": "prompt_rewriting",
+    "output": "youngster named as Abu Hafs al-Badri is alleged cousin of al-Baghdadi . he is believed to be one of two young suicide bombers who blew themselves up . the trio carried out suicide lorry bombings in northern baghdad last month . they are thought to be the latest in a series of attacks against locals .",
+    "fre": 66.74000000000002,
+    "rouge1": 0.4144,
+    "rougeL": 0.2523
+  },
+  {
+    "id": "cnn_003",
+    "dataset": "cnn",
+    "template": "zero_shot.txt",
+    "mutation": "prompt_rewriting",
+    "output": "scientists at the Ecole Polytechnique Federale de Lausanne (EPFL) in Switzerland have created artificial 'ghosts' by having signals mixed up in their brains . by having signals mixed up in their brains, volunteers were made to feel that a creepy 'presence' was behind them . they counted up to four phantoms positioned where no-one was standing . the experiment was so spoo",
+    "fre": 62.81290254237291,
+    "rouge1": 0.3261,
+    "rougeL": 0.1522
+  },
+  {
+    "id": "cnn_004",
+    "dataset": "cnn",
+    "template": "zero_shot.txt",
+    "mutation": "prompt_rewriting",
+    "output": "president Barack Obama reportedly granted the CIA an exemption from providing proof that intended targets of drone strikes posed an imminent threat to the US . the waiver would have prevented the January 15 strike that killed two hostages, one of them an american, from taking place . 'we do believe that the operation did take out dangerous members of al-Qaeda,' said the president . 'we are devastated by this news and the knowledge that my husband will never safely return home",
+    "fre": 48.64444620253167,
+    "rouge1": 0.2558,
+    "rougeL": 0.1512
+  },
+  {
+    "id": "cnn_005",
+    "dataset": "cnn",
+    "template": "zero_shot.txt",
+    "mutation": "prompt_rewriting",
+    "output": "the bones were wrapped in burlap and plaster to create a protective shell around the bones . they will be transported to Southern Methodist university for cleaning and assembly, which will likely take months . the bones were wrapped in burlap and plaster to create a protective shell around the bones .",
+    "fre": 62.493401360544254,
+    "rouge1": 0.2909,
+    "rougeL": 0.1818
+  },
+  {
+    "id": "cnn_001",
+    "dataset": "cnn",
+    "template": "few_shot.txt",
+    "mutation": "none",
+    "output": "hill is the last living member of the hijackers who killed a new mexican police officer . he is a \"freedom fighter,\" says a woman who was on a plane when he was shot . hill says he's not a criminal, but he's a \"very good man\" who has a good life . hill says he's not a \"political scumbag\"",
+    "fre": 79.57125000000002,
+    "rouge1": 0.2637,
+    "rougeL": 0.1978
+  },
+  {
+    "id": "cnn_002",
+    "dataset": "cnn",
+    "template": "few_shot.txt",
+    "mutation": "none",
+    "output": "a rare snowstorm hit southern california yesterday, causing major traffic delays . a youngster is thought to be the cousin of the alleged caliph of the islamic state . he is believed to be one of two young fighters who carried out suicide lorry attacks .",
+    "fre": 60.468062015503904,
+    "rouge1": 0.24,
+    "rougeL": 0.18
+  },
+  {
+    "id": "cnn_003",
+    "dataset": "cnn",
+    "template": "few_shot.txt",
+    "mutation": "none",
+    "output": "scientists at the Ecole Polytechnique Federale de Lausanne (EPFL) in Switzerland have created artificial 'ghosts' by mixing up signals in their brains . by having signals mixed up in their brains, volunteers were made to feel that a creepy presence was behind them . they counted up to four phantoms positioned where no-one was standing . the experiment was so spooky that two participants asked",
+    "fre": 58.744435483871,
+    "rouge1": 0.3158,
+    "rougeL": 0.1474
+  },
+  {
+    "id": "cnn_004",
+    "dataset": "cnn",
+    "template": "few_shot.txt",
+    "mutation": "none",
+    "output": "president Barack Obama granted the CIA an exemption from providing proof that intended targets of drone strikes posed an imminent threat to the US . the waiver would have delayed the January 15 strike, possibly saving the lives of 73-year-old economic adviser Warren Weinstein and 39-year-old italian aid worker Giovanni Lo Porto . 'we do believe that the operation did take out dangerous members of al Qaeda,' said the president . 'i think it was",
+    "fre": 46.390000000000015,
+    "rouge1": 0.3095,
+    "rougeL": 0.2262
+  },
+  {
+    "id": "cnn_005",
+    "dataset": "cnn",
+    "template": "few_shot.txt",
+    "mutation": "none",
+    "output": "the bones were wrapped in burlap and plaster to create a protective shell around the bones . they will be transported to Southern Methodist university for cleaning and assembly, which will likely take months . experts say it is rare to find a dinosaur in the Dallas area .",
+    "fre": 60.69340579710146,
+    "rouge1": 0.3178,
+    "rougeL": 0.1869
+  },
+  {
+    "id": "cnn_001",
+    "dataset": "cnn",
+    "template": "few_shot.txt",
+    "mutation": "synonym_replacement",
+    "output": "hill is the last living member of the hijackers who killed a new mexican police officer . he is a \"freedom fighter,\" but he wants to see his family in the united states . he says he's not a criminal, but he's a \"sacrifice-sucker\" who wants to be freed . hill says he's not ready to leave his country .",
+    "fre": 73.27857142857142,
+    "rouge1": 0.3297,
+    "rougeL": 0.1758
+  },
+  {
+    "id": "cnn_002",
+    "dataset": "cnn",
+    "template": "few_shot.txt",
+    "mutation": "synonym_replacement",
+    "output": "a rare snowstorm hit southern california yesterday, causing major traffic delays . a youngster is thought to be the cousin of the alleged caliph of the islamic state . he is believed to be one of two young fighters who carried out suicide lorry attacks .",
+    "fre": 60.468062015503904,
+    "rouge1": 0.24,
+    "rougeL": 0.18
+  },
+  {
+    "id": "cnn_003",
+    "dataset": "cnn",
+    "template": "few_shot.txt",
+    "mutation": "synonym_replacement",
+    "output": "scientists at the Ecole Polytechnique Federale de Lausanne (EPFL) in Switzerland have created artificial 'ghosts' by mixing up signals in their brains . by having signals mixed up in their brains, volunteers were made to feel that a creepy presence was behind them . they counted up to four phantoms positioned where no-one was standing . the experiment was so spooky that two participants asked",
+    "fre": 58.744435483871,
+    "rouge1": 0.3158,
+    "rougeL": 0.1474
+  },
+  {
+    "id": "cnn_004",
+    "dataset": "cnn",
+    "template": "few_shot.txt",
+    "mutation": "synonym_replacement",
+    "output": "president Barack Obama granted the CIA an exemption from providing proof that intended targets of drone strikes posed an imminent threat to the US . the waiver would have delayed the January 15 strike, possibly saving the lives of 73-year-old economic adviser Warren Weinstein and 39-year-old italian aid worker Giovanni Lo Porto . 'we do believe that the operation did take out dangerous members of al Qaeda,' said the president . 'i think it was",
+    "fre": 46.390000000000015,
+    "rouge1": 0.3095,
+    "rougeL": 0.2262
+  },
+  {
+    "id": "cnn_005",
+    "dataset": "cnn",
+    "template": "few_shot.txt",
+    "mutation": "synonym_replacement",
+    "output": "the bones were wrapped in burlap and plaster to create a protective shell around the bones . they will be transported to Southern Methodist university for cleaning and assembly, which will likely take months . experts say it is rare to find a dinosaur in the Dallas area .",
+    "fre": 60.69340579710146,
+    "rouge1": 0.3178,
+    "rougeL": 0.1869
+  },
+  {
+    "id": "cnn_001",
+    "dataset": "cnn",
+    "template": "few_shot.txt",
+    "mutation": "prompt_rewriting",
+    "output": "hill is the last living member of the hijackers who killed a new mexican police officer . he is a \"freedom fighter,\" but he wants to see his family in the united states . hill is a convicted felon who was arrested in a u.s. prison in october . he is a fugitive who is wanted for killing a flight attendant in 1971 .",
+    "fre": 69.165,
+    "rouge1": 0.3261,
+    "rougeL": 0.1739
+  },
+  {
+    "id": "cnn_002",
+    "dataset": "cnn",
+    "template": "few_shot.txt",
+    "mutation": "prompt_rewriting",
+    "output": "a rare snowstorm hit southern california yesterday, causing major traffic delays . a youngster is thought to be the cousin of the alleged caliph of the islamic state . he is believed to be one of two young fighters who carried out suicide lorry attacks .",
+    "fre": 60.468062015503904,
+    "rouge1": 0.24,
+    "rougeL": 0.18
+  },
+  {
+    "id": "cnn_003",
+    "dataset": "cnn",
+    "template": "few_shot.txt",
+    "mutation": "prompt_rewriting",
+    "output": "scientists at the Ecole Polytechnique Federale de Lausanne (EPFL) in Switzerland have created artificial 'ghosts' by mixing up signals in their brains . by having signals mixed up in their brains, volunteers were made to feel that a creepy 'presence' was behind them . they counted up to four phantoms positioned where no-one was standing . the experiment was so spooky",
+    "fre": 60.84163793103451,
+    "rouge1": 0.3297,
+    "rougeL": 0.1538
+  },
+  {
+    "id": "cnn_004",
+    "dataset": "cnn",
+    "template": "few_shot.txt",
+    "mutation": "prompt_rewriting",
+    "output": "president Barack Obama granted the CIA an exemption from providing proof that intended targets of drone strikes posed an imminent threat to the US . the waiver would have delayed the January 15 strike, possibly saving the lives of 73-year-old economic adviser Warren Weinstein and 39-year-old italian aid worker Giovanni Lo Porto . 'i think it was probably preventable, in that there was an obvious breakdown in intelligence,' said the widow of the hostage .",
+    "fre": 36.775000000000034,
+    "rouge1": 0.3333,
+    "rougeL": 0.25
+  },
+  {
+    "id": "cnn_005",
+    "dataset": "cnn",
+    "template": "few_shot.txt",
+    "mutation": "prompt_rewriting",
+    "output": "the bones were wrapped in burlap and plaster to create a protective shell around the fossils . they will be transported to Southern Methodist university for cleaning and assembly, which will likely take months . experts say it is rare to find a dinosaur in the Dallas area .",
+    "fre": 58.854275362318845,
+    "rouge1": 0.3364,
+    "rougeL": 0.1869
+  },
+  {
+    "id": "cnn_001",
+    "dataset": "cnn",
+    "template": "instruction_based.txt",
+    "mutation": "none",
+    "output": "hill was a black power militant who hijacked a plane in 1971 . he is the last living member of the hijackers . he says he is a freedom fighter .",
+    "fre": 82.54738095238096,
+    "rouge1": 0.2712,
+    "rougeL": 0.1695
+  },
+  {
+    "id": "cnn_002",
+    "dataset": "cnn",
+    "template": "instruction_based.txt",
+    "mutation": "none",
+    "output": "youngster named as Abu Hafs al-Badri is alleged cousin of al-Baghdadi . he is believed to be one of two young suicide bombers who blew themselves up . the trio of teenage suicide bombers come after another boy was killed in a suicide bomb attack in northern iraq last month .",
+    "fre": 60.16999999999999,
+    "rouge1": 0.4486,
+    "rougeL": 0.2804
+  },
+  {
+    "id": "cnn_003",
+    "dataset": "cnn",
+    "template": "instruction_based.txt",
+    "mutation": "none",
+    "output": "scientists at the Ecole Polytechnique Federale de Lausanne (EPFL) in Switzerland have created artificial 'ghosts' by having signals mixed up in their brains . by having signals mixed up in their brains, volunteers were made to feel that a creepy 'presence' was behind them . they counted up to four phantoms positioned where no-one was standing . the sensation was re-create",
+    "fre": 60.84163793103451,
+    "rouge1": 0.3478,
+    "rougeL": 0.1522
+  },
+  {
+    "id": "cnn_004",
+    "dataset": "cnn",
+    "template": "instruction_based.txt",
+    "mutation": "none",
+    "output": "president 'confessed with CIA's ability to provide proof of imminent threat to the us' . 'we do believe that the operation did take out dangerous members of Al-Qaeda,' said 73-year-old economic adviser . 'we are devastated by this news and the knowledge that my husband will never safely return home,' said his widow . 'i think it was probably preventable, in that there was an obvious breakdown in intelligence",
+    "fre": 51.65113636363637,
+    "rouge1": 0.1852,
+    "rougeL": 0.0864
+  },
+  {
+    "id": "cnn_005",
+    "dataset": "cnn",
+    "template": "instruction_based.txt",
+    "mutation": "none",
+    "output": "the bones were wrapped in burlap and plaster to create a protective shell around the bones . they will be transported to Southern Methodist university for cleaning and assembly, which will likely take months . the bones were wrapped in burlap and plaster to create a protective shell around the bones .",
+    "fre": 62.493401360544254,
+    "rouge1": 0.2909,
+    "rougeL": 0.1818
+  },
+  {
+    "id": "cnn_001",
+    "dataset": "cnn",
+    "template": "instruction_based.txt",
+    "mutation": "synonym_replacement",
+    "output": "hill was a black power militant who hijacked a plane in 1971 . he is the last living member of the hijackers . he says he is a freedom fighter .",
+    "fre": 82.54738095238096,
+    "rouge1": 0.2712,
+    "rougeL": 0.1695
+  },
+  {
+    "id": "cnn_002",
+    "dataset": "cnn",
+    "template": "instruction_based.txt",
+    "mutation": "synonym_replacement",
+    "output": "youngster named as Abu Hafs al-Badri is alleged cousin of al-Baghdadi . he is believed to be one of two young suicide bombers who blew themselves up . the trio of teenage suicide bombers come after another boy was killed in a suicide bomb attack in northern iraq last month .",
+    "fre": 60.16999999999999,
+    "rouge1": 0.4486,
+    "rougeL": 0.2804
+  },
+  {
+    "id": "cnn_003",
+    "dataset": "cnn",
+    "template": "instruction_based.txt",
+    "mutation": "synonym_replacement",
+    "output": "scientists at the Ecole Polytechnique Federale de Lausanne (EPFL) in Switzerland have created artificial 'ghosts' by having signals mixed up in their brains . by having signals mixed up in their brains, volunteers were made to feel that a creepy 'presence' was behind them . they counted up to four phantoms positioned where no-one was standing . the sensation was re-create",
+    "fre": 60.84163793103451,
+    "rouge1": 0.3478,
+    "rougeL": 0.1522
+  },
+  {
+    "id": "cnn_004",
+    "dataset": "cnn",
+    "template": "instruction_based.txt",
+    "mutation": "synonym_replacement",
+    "output": "president Barack Obama reportedly granted the CIA an exemption from providing proof that intended targets of drone strikes posed an imminent threat to the US . the waiver would have prevented the January 15 strike that killed two hostages, one of them an american, from taking place . 'we do believe that the operation did take out dangerous members of al-Qaeda,' said the president . 'we are devastated by this news and the knowledge that my husband will never safely return home",
+    "fre": 48.64444620253167,
+    "rouge1": 0.2558,
+    "rougeL": 0.1512
+  },
+  {
+    "id": "cnn_005",
+    "dataset": "cnn",
+    "template": "instruction_based.txt",
+    "mutation": "synonym_replacement",
+    "output": "the bones were wrapped in burlap and plaster to create a protective shell around the bones . they will be transported to Southern Methodist university for cleaning and assembly, which will likely take months . the bones were wrapped in burlap and plaster to create a protective shell around the bones .",
+    "fre": 62.493401360544254,
+    "rouge1": 0.2909,
+    "rougeL": 0.1818
+  },
+  {
+    "id": "cnn_001",
+    "dataset": "cnn",
+    "template": "instruction_based.txt",
+    "mutation": "prompt_rewriting",
+    "output": "hill was a black power militant who hijacked a plane in 1971 . he is now in a safe haven in the united states . he says he is not a cop killer but a freedom fighter .",
+    "fre": 86.22190476190477,
+    "rouge1": 0.2727,
+    "rougeL": 0.2121
+  },
+  {
+    "id": "cnn_002",
+    "dataset": "cnn",
+    "template": "instruction_based.txt",
+    "mutation": "prompt_rewriting",
+    "output": "youngster named as Abu Hafs al-Badri is alleged cousin of al-Baghdadi . he is believed to be one of two young suicide bombers who blew themselves up . the trio of teenage suicide bombers come after another boy was killed in a suicide bomb attack in a lorry in northern baghdad .",
+    "fre": 59.04034013605445,
+    "rouge1": 0.4444,
+    "rougeL": 0.2778
+  },
+  {
+    "id": "cnn_003",
+    "dataset": "cnn",
+    "template": "instruction_based.txt",
+    "mutation": "prompt_rewriting",
+    "output": "scientists at the Ecole Polytechnique Federale de Lausanne (EPFL) in Switzerland have created artificial 'ghosts' by having signals mixed up in their brains . by having signals mixed up in their brains, volunteers were made to feel that a creepy 'presence' was behind them . they counted up to four phantoms positioned where no-one was standing . the experiment was so spoo",
+    "fre": 62.81290254237291,
+    "rouge1": 0.3261,
+    "rougeL": 0.1522
+  },
+  {
+    "id": "cnn_004",
+    "dataset": "cnn",
+    "template": "instruction_based.txt",
+    "mutation": "prompt_rewriting",
+    "output": "president 'confessed with CIA's ability to provide proof of imminent threat to the us' . 'we do believe that the operation did take out dangerous members of Al-Qaeda,' said 73-year-old economic adviser . 'we are devastated by this news and the knowledge that my husband will never safely return home,' said his widow . 'i think it was probably preventable, in that there was an obvious breakdown in intelligence",
+    "fre": 51.65113636363637,
+    "rouge1": 0.1852,
+    "rougeL": 0.0864
+  },
+  {
+    "id": "cnn_005",
+    "dataset": "cnn",
+    "template": "instruction_based.txt",
+    "mutation": "prompt_rewriting",
+    "output": "the bones were wrapped in burlap and plaster to create a protective shell around the bones . they will be transported to Southern Methodist university for cleaning and assembly, which will likely take months . the bones were wrapped in burlap and plaster to create a protective shell around the bones .",
+    "fre": 62.493401360544254,
+    "rouge1": 0.2909,
+    "rougeL": 0.1818
+  },
+  {
+    "id": "cnn_001",
+    "dataset": "cnn",
+    "template": "pattern_based.txt",
+    "mutation": "none",
+    "output": "hill was a black power militant who hijacked a plane in 1971 . he is the last living member of the hijackers . he says he is a freedom fighter and wants to visit his family .",
+    "fre": 78.38460784313727,
+    "rouge1": 0.3385,
+    "rougeL": 0.1538
+  },
+  {
+    "id": "cnn_002",
+    "dataset": "cnn",
+    "template": "pattern_based.txt",
+    "mutation": "none",
+    "output": "youngster named as Abu Hafs al-Badri is alleged cousin of al-Baghdadi . he is believed to be one of two young fighters who carried out suicide lorry attacks in northern baghdad . a third teenager, named as a jihadi, blew himself up in a lorry attack in april . a third teenager, named as a jihadi,",
+    "fre": 62.49568396226417,
+    "rouge1": 0.4286,
+    "rougeL": 0.3214
+  },
+  {
+    "id": "cnn_003",
+    "dataset": "cnn",
+    "template": "pattern_based.txt",
+    "mutation": "none",
+    "output": "scientists at the Ecole Polytechnique Federale de Lausanne (EPFL) in Switzerland have created artificial 'ghosts' by mixing up signals in their brains . by having signals mixed up in their brains, volunteers were made to feel that a creepy 'presence' was behind them . they counted up to four phantoms positioned where no-one was standing . the experiment was so spooky",
+    "fre": 60.84163793103451,
+    "rouge1": 0.3297,
+    "rougeL": 0.1538
+  },
+  {
+    "id": "cnn_004",
+    "dataset": "cnn",
+    "template": "pattern_based.txt",
+    "mutation": "none",
+    "output": "president Barack Obama reportedly granted the CIA an exemption relaxing restrictions on drone strikes in Pakistan after enacting more stringent rules in 2013 . the waiver would have prevented the strike from being postponed or even prevented entirely . 'we do believe that the operation did take out dangerous members of Al-Qaeda,' said the 73-year-old economic adviser . 'i think it was probably preventable, in that there was an obvious breakdown in",
+    "fre": 37.291467391304366,
+    "rouge1": 0.2439,
+    "rougeL": 0.1463
+  },
+  {
+    "id": "cnn_005",
+    "dataset": "cnn",
+    "template": "pattern_based.txt",
+    "mutation": "none",
+    "output": "the bones were wrapped in burlap and plaster to create a protective shell around the fossils, like a cast around a human's broken bones . the nodosaur, meaning 'knobby lizard' in Greek, lived on land and was 15-foot-long, scaly-plated plant eaters that could weigh up to about 2,000 pounds . 'my dad told me it was a turtle,'",
+    "fre": 70.05261904761907,
+    "rouge1": 0.2623,
+    "rougeL": 0.1475
+  },
+  {
+    "id": "cnn_001",
+    "dataset": "cnn",
+    "template": "pattern_based.txt",
+    "mutation": "synonym_replacement",
+    "output": "hill was a black power militant who hijacked a plane in 1971 . he is the last living member of the hijackers . he says he is a freedom fighter and wants to visit his family .",
+    "fre": 78.38460784313727,
+    "rouge1": 0.3385,
+    "rougeL": 0.1538
+  },
+  {
+    "id": "cnn_002",
+    "dataset": "cnn",
+    "template": "pattern_based.txt",
+    "mutation": "synonym_replacement",
+    "output": "youngster named as Abu Hafs al-Badri is alleged cousin of al-Baghdadi . he is believed to be one of two young fighters who carried out suicide lorry attacks in northern baghdad . a third teenager, named as a jihadi, blew himself up in a lorry attack in april . a third teenager, named as a jihadi,",
+    "fre": 62.49568396226417,
+    "rouge1": 0.4286,
+    "rougeL": 0.3214
+  },
+  {
+    "id": "cnn_003",
+    "dataset": "cnn",
+    "template": "pattern_based.txt",
+    "mutation": "synonym_replacement",
+    "output": "scientists at the Ecole Polytechnique Federale de Lausanne (EPFL) in Switzerland have created artificial 'ghosts' by mixing up signals in their brains . by having signals mixed up in their brains, volunteers were made to feel that a creepy 'presence' was behind them . they counted up to four phantoms positioned where no-one was standing . the experiment was so spooky",
+    "fre": 60.84163793103451,
+    "rouge1": 0.3297,
+    "rougeL": 0.1538
+  },
+  {
+    "id": "cnn_004",
+    "dataset": "cnn",
+    "template": "pattern_based.txt",
+    "mutation": "synonym_replacement",
+    "output": "president Barack Obama reportedly granted the CIA an exemption relaxing restrictions on drone strikes in Pakistan after enacting more stringent rules in 2013 . the waiver would have prevented the strike from being postponed or even prevented entirely . 'we do believe that the operation did take out dangerous members of Al-Qaeda,' said the 73-year-old economic adviser . 'i think it was probably preventable, in that there was an obvious breakdown in",
+    "fre": 37.291467391304366,
+    "rouge1": 0.2439,
+    "rougeL": 0.1463
+  },
+  {
+    "id": "cnn_005",
+    "dataset": "cnn",
+    "template": "pattern_based.txt",
+    "mutation": "synonym_replacement",
+    "output": "the bones were wrapped in burlap and plaster to create a protective shell around the fossils, like a cast around a human's broken bones . the nodosaur, meaning 'knobby lizard' in Greek, lived on land and was 15-foot-long, scaly-plated plant eaters that could weigh up to about 2,000 pounds . 'my dad told me it was a turtle,'",
+    "fre": 70.05261904761907,
+    "rouge1": 0.2623,
+    "rougeL": 0.1475
+  },
+  {
+    "id": "cnn_001",
+    "dataset": "cnn",
+    "template": "pattern_based.txt",
+    "mutation": "prompt_rewriting",
+    "output": "hill was a black power militant who hijacked a plane in 1971 . he is the last living member of the hijackers . he says he is a freedom fighter and wants to visit his family .",
+    "fre": 78.38460784313727,
+    "rouge1": 0.3385,
+    "rougeL": 0.1538
+  },
+  {
+    "id": "cnn_002",
+    "dataset": "cnn",
+    "template": "pattern_based.txt",
+    "mutation": "prompt_rewriting",
+    "output": "youngster named as Abu Hafs al-Badri is alleged cousin of al-Baghdadi . he is believed to be one of two young fighters who carried out suicide lorry attacks in northern baghdad . a third teenager, named as a jihadi, blew himself up in a lorry attack in april . a third teenager, named as a jihadi,",
+    "fre": 62.49568396226417,
+    "rouge1": 0.4286,
+    "rougeL": 0.3214
+  },
+  {
+    "id": "cnn_003",
+    "dataset": "cnn",
+    "template": "pattern_based.txt",
+    "mutation": "prompt_rewriting",
+    "output": "scientists at the Ecole Polytechnique Federale de Lausanne (EPFL) in Switzerland have created artificial 'ghosts' by mixing up signals in their brains . by having signals mixed up in their brains, volunteers were made to feel that a creepy 'presence' was behind them . they counted up to four phantoms positioned where no-one was standing . the experiment was so spooky",
+    "fre": 60.84163793103451,
+    "rouge1": 0.3297,
+    "rougeL": 0.1538
+  },
+  {
+    "id": "cnn_004",
+    "dataset": "cnn",
+    "template": "pattern_based.txt",
+    "mutation": "prompt_rewriting",
+    "output": "president Barack Obama reportedly granted the CIA an exemption relaxing restrictions on drone strikes in Pakistan after enacting more stringent rules in 2013 . the waiver would have prevented the strike from being postponed or even prevented entirely . 'we do believe that the operation did take out dangerous members of Al-Qaeda,' said the 73-year-old economic adviser . 'i think it was probably preventable, in that there was an obvious breakdown in",
+    "fre": 37.291467391304366,
+    "rouge1": 0.2439,
+    "rougeL": 0.1463
+  },
+  {
+    "id": "cnn_005",
+    "dataset": "cnn",
+    "template": "pattern_based.txt",
+    "mutation": "prompt_rewriting",
+    "output": "the bones were wrapped in burlap and plaster to create a protective shell around the fossils, like a cast around a human's broken bones . the nodosaur, meaning 'knobby lizard' in Greek, lived on land and was 15-foot-long, scaly-plated plant eaters that could weigh up to about 2,000 pounds . 'my dad told me it was a turtle,'",
+    "fre": 70.05261904761907,
+    "rouge1": 0.2623,
+    "rougeL": 0.1475
+  },
+  {
+    "id": "cnn_001",
+    "dataset": "cnn",
+    "template": "target_audience.txt",
+    "mutation": "none",
+    "output": "hill was a black power militant who hijacked a plane in 1971 . he and two others were arrested and charged with murder . they were released after a year in prison . hill is now in a safe haven in the united states .",
+    "fre": 82.94344512195123,
+    "rouge1": 0.3333,
+    "rougeL": 0.1389
+  },
+  {
+    "id": "cnn_002",
+    "dataset": "cnn",
+    "template": "target_audience.txt",
+    "mutation": "none",
+    "output": "youngster named as Abu Hafs al-Badri is alleged to be cousin of al-Baghdadi . he is believed to be one of two young fighters who carried out suicide lorry attacks in northern baghdad . a third teenager, named as a jihadi, blew himself up in an iraqi lorry last month .",
+    "fre": 61.932500000000005,
+    "rouge1": 0.4299,
+    "rougeL": 0.2991
+  },
+  {
+    "id": "cnn_003",
+    "dataset": "cnn",
+    "template": "target_audience.txt",
+    "mutation": "none",
+    "output": "scientists at the Ecole Polytechnique Federale de Lausanne (EPFL) in Switzerland have created artificial 'ghosts' by mixing up brain signals . by having signals mixed up in their brains, volunteers were made to feel that a creepy 'presence' was behind them . they counted up to four phantoms positioned where no-one was standing . the experiment was so spooky that two participants",
+    "fre": 57.077309322033926,
+    "rouge1": 0.3261,
+    "rougeL": 0.1522
+  },
+  {
+    "id": "cnn_004",
+    "dataset": "cnn",
+    "template": "target_audience.txt",
+    "mutation": "none",
+    "output": "president Barack Obama reportedly granted the CIA an exemption relaxing restrictions on drone strikes in Pakistan after enacting more stringent rules in 2013 . the waiver would have prevented the strike, possibly saving the lives of 73-year-old Warren Weinstein and 39-year-old Giovanni Lo Porto . 'we do believe that the operation did take out dangerous members of Al-Qaeda,' said the 73-year-old economic adviser . 'i",
+    "fre": 35.761559139784964,
+    "rouge1": 0.2981,
+    "rougeL": 0.1988
+  },
+  {
+    "id": "cnn_005",
+    "dataset": "cnn",
+    "template": "target_audience.txt",
+    "mutation": "none",
+    "output": "the bones were wrapped in burlap and plaster to create a protective shell around the fossils . they will be transported to Southern Methodist university for cleaning and assembly, which will likely take months . the bones were wrapped in burlap and plaster to create a protective shell around the fossils .",
+    "fre": 59.04034013605445,
+    "rouge1": 0.3273,
+    "rougeL": 0.1818
+  },
+  {
+    "id": "cnn_001",
+    "dataset": "cnn",
+    "template": "target_audience.txt",
+    "mutation": "synonym_replacement",
+    "output": "hill was a black power militant who hijacked a plane in 1971 . he and two others were arrested and charged with murder . they were released after a year in prison . hill is now in a safe haven in the united states .",
+    "fre": 82.94344512195123,
+    "rouge1": 0.3333,
+    "rougeL": 0.1389
+  },
+  {
+    "id": "cnn_002",
+    "dataset": "cnn",
+    "template": "target_audience.txt",
+    "mutation": "synonym_replacement",
+    "output": "youngster named as Abu Hafs al-Badri is alleged to be cousin of al-Baghdadi . he is believed to be one of two young fighters who carried out suicide lorry attacks in northern baghdad . a third teenager, named as a jihadi, blew himself up in an iraqi lorry last month .",
+    "fre": 61.932500000000005,
+    "rouge1": 0.4299,
+    "rougeL": 0.2991
+  },
+  {
+    "id": "cnn_003",
+    "dataset": "cnn",
+    "template": "target_audience.txt",
+    "mutation": "synonym_replacement",
+    "output": "scientists at the Ecole Polytechnique Federale de Lausanne (EPFL) in Switzerland have created artificial 'ghosts' by mixing up brain signals . by having signals mixed up in their brains, volunteers were made to feel that a creepy 'presence' was behind them . they counted up to four phantoms positioned where no-one was standing . the experiment was so spooky that two participants",
+    "fre": 57.077309322033926,
+    "rouge1": 0.3261,
+    "rougeL": 0.1522
+  },
+  {
+    "id": "cnn_004",
+    "dataset": "cnn",
+    "template": "target_audience.txt",
+    "mutation": "synonym_replacement",
+    "output": "president Barack Obama reportedly granted the CIA an exemption relaxing restrictions on drone strikes in Pakistan after enacting more stringent rules in 2013 . the waiver would have prevented the CIA from gathering additional information and surveillance data on the al Qaeda-linked militants . 'we do believe that the operation did take out dangerous members of Al-Qaeda,' said the 73-year-old economic adviser . 'we are devastated by this news and the knowledge",
+    "fre": 33.61320652173916,
+    "rouge1": 0.2788,
+    "rougeL": 0.1697
+  },
+  {
+    "id": "cnn_005",
+    "dataset": "cnn",
+    "template": "target_audience.txt",
+    "mutation": "synonym_replacement",
+    "output": "the bones were wrapped in burlap and plaster to create a protective shell around the fossils . they will be transported to Southern Methodist university for cleaning and assembly, which will likely take months . the bones were wrapped in burlap and plaster to create a protective shell around the fossils .",
+    "fre": 59.04034013605445,
+    "rouge1": 0.3273,
+    "rougeL": 0.1818
+  },
+  {
+    "id": "cnn_001",
+    "dataset": "cnn",
+    "template": "target_audience.txt",
+    "mutation": "prompt_rewriting",
+    "output": "hill was a black power militant who hijacked a plane in 1971 . he and two others were arrested and charged with murder . they were released after a year in prison . hill is now in the united states and wants to return to the united states .",
+    "fre": 80.73625000000003,
+    "rouge1": 0.3947,
+    "rougeL": 0.1579
+  },
+  {
+    "id": "cnn_002",
+    "dataset": "cnn",
+    "template": "target_audience.txt",
+    "mutation": "prompt_rewriting",
+    "output": "youngster is believed to be the cousin of the alleged al-Baghdadhi caliph . he is believed to be one of two suicide bombers who carried out suicide lorry attacks in northern baghdad last month . a third boy, aged 14, was seen in a video criticising the west before he carried out a suicide bomb attack in a syrian province .",
+    "fre": 55.93580459770118,
+    "rouge1": 0.3276,
+    "rougeL": 0.2069
+  },
+  {
+    "id": "cnn_003",
+    "dataset": "cnn",
+    "template": "target_audience.txt",
+    "mutation": "prompt_rewriting",
+    "output": "scientists at the Ecole Polytechnique Federale de Lausanne (EPFL) in Switzerland have created artificial 'ghosts' by having signals mixed up in their brains . by having signals mixed up in their brains, volunteers were made to feel that a creepy 'presence' was behind them . they counted up to four phantoms positioned where no-one was standing . the experiment was so spoo",
+    "fre": 62.81290254237291,
+    "rouge1": 0.3261,
+    "rougeL": 0.1522
+  },
+  {
+    "id": "cnn_004",
+    "dataset": "cnn",
+    "template": "target_audience.txt",
+    "mutation": "prompt_rewriting",
+    "output": "president Barack Obama reportedly granted the CIA an exemption relaxing restrictions on drone strikes in Pakistan after enacting more stringent rules in 2013 . the waiver would have prevented the strike, possibly saving the lives of 73-year-old economic adviser Warren Weinstein and 39-year-old italian aid worker Giovanni Lo Porto . 'we do believe that the operation did take out dangerous members of Al-Qaeda,' said the husband of the hostage .",
+    "fre": 32.6442786069652,
+    "rouge1": 0.3415,
+    "rougeL": 0.2439
+  },
+  {
+    "id": "cnn_005",
+    "dataset": "cnn",
+    "template": "target_audience.txt",
+    "mutation": "prompt_rewriting",
+    "output": "the bones were wrapped in burlap and plaster to create a protective shell around the fossils . they will be transported to Southern Methodist university for cleaning and assembly, which will likely take months . the bones were wrapped in burlap and plaster to create a protective shell around the fossils .",
+    "fre": 59.04034013605445,
+    "rouge1": 0.3273,
+    "rougeL": 0.1818
+  }
+]

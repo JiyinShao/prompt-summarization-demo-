@@ -1,0 +1,752 @@
+[
+  {
+    "id": "xsum_001",
+    "dataset": "xsum",
+    "template": "zero_shot.txt",
+    "mutation": "none",
+    "output": "alonso was 0.234 seconds quicker than Kimi Raikkonen at the Hungaroring . valtteri bottas was 0.4secs quicker than Hamilton and 0.372secs behind Vettel . fernando alonso was 0.3secs quicker than valtteri bottas at the turn 11 .",
+    "fre": 62.56382352941179,
+    "rouge1": 0.0702,
+    "rougeL": 0.0702
+  },
+  {
+    "id": "xsum_002",
+    "dataset": "xsum",
+    "template": "zero_shot.txt",
+    "mutation": "none",
+    "output": "True",
+    "fre": 121.22000000000003,
+    "rouge1": 0.0,
+    "rougeL": 0.0
+  },
+  {
+    "id": "xsum_003",
+    "dataset": "xsum",
+    "template": "zero_shot.txt",
+    "mutation": "none",
+    "output": "a coffin-themed wedding shoot in Singapore was inspired by work . the couple will feature a set of \"assassin-themed\" wedding photos . the shoot took place in a waterway park in a waterway park in Singapore .",
+    "fre": 68.43166666666669,
+    "rouge1": 0.3019,
+    "rougeL": 0.1887
+  },
+  {
+    "id": "xsum_004",
+    "dataset": "xsum",
+    "template": "zero_shot.txt",
+    "mutation": "none",
+    "output": "False",
+    "fre": 121.22000000000003,
+    "rouge1": 0.0,
+    "rougeL": 0.0
+  },
+  {
+    "id": "xsum_005",
+    "dataset": "xsum",
+    "template": "zero_shot.txt",
+    "mutation": "none",
+    "output": "ennis-hill receives an honour for her services to athletics . the 31-year-old won gold at the 2012 london 2012 games and silver four years later in Rio . she announced her retirement from the sport in October .",
+    "fre": 69.30190476190477,
+    "rouge1": 0.1091,
+    "rougeL": 0.1091
+  },
+  {
+    "id": "xsum_001",
+    "dataset": "xsum",
+    "template": "zero_shot.txt",
+    "mutation": "synonym_replacement",
+    "output": "nico rosberg's team-mate fernando alonso was second fastest in the session . mercedes' fernando alonso was seventh, while fernando alonso was eighth . alonso was 0.3secs quicker than valtteri bottas, who was fifth .",
+    "fre": 43.4139112903226,
+    "rouge1": 0.1509,
+    "rougeL": 0.1509
+  },
+  {
+    "id": "xsum_002",
+    "dataset": "xsum",
+    "template": "zero_shot.txt",
+    "mutation": "synonym_replacement",
+    "output": "True",
+    "fre": 121.22000000000003,
+    "rouge1": 0.0,
+    "rougeL": 0.0
+  },
+  {
+    "id": "xsum_003",
+    "dataset": "xsum",
+    "template": "zero_shot.txt",
+    "mutation": "synonym_replacement",
+    "output": "a coffin-themed wedding shoot in Singapore was inspired by work . the couple will feature a set of \"assassin-themed\" wedding photos . the shoot took place in a waterway park in a waterway park in Singapore .",
+    "fre": 68.43166666666669,
+    "rouge1": 0.3019,
+    "rougeL": 0.1887
+  },
+  {
+    "id": "xsum_004",
+    "dataset": "xsum",
+    "template": "zero_shot.txt",
+    "mutation": "synonym_replacement",
+    "output": "False",
+    "fre": 121.22000000000003,
+    "rouge1": 0.0,
+    "rougeL": 0.0
+  },
+  {
+    "id": "xsum_005",
+    "dataset": "xsum",
+    "template": "zero_shot.txt",
+    "mutation": "synonym_replacement",
+    "output": "ennis-hill receives an honour for her services to athletics . the 31-year-old won gold at the 2012 london 2012 games and silver four years later in Rio . she announced her retirement from the sport in October .",
+    "fre": 69.30190476190477,
+    "rouge1": 0.1091,
+    "rougeL": 0.1091
+  },
+  {
+    "id": "xsum_001",
+    "dataset": "xsum",
+    "template": "zero_shot.txt",
+    "mutation": "prompt_rewriting",
+    "output": "kimi Raikkonen was 0.234 seconds quicker than the british driver . title rivals Lewis Hamilton and Sebastian Vettel were third and sixth .",
+    "fre": 58.73000000000002,
+    "rouge1": 0.0488,
+    "rougeL": 0.0488
+  },
+  {
+    "id": "xsum_002",
+    "dataset": "xsum",
+    "template": "zero_shot.txt",
+    "mutation": "prompt_rewriting",
+    "output": "police say a cab driver was assaulted by a 23-year-old woman . she is accused of performing a sex act on the 29-year-old driver . a 20-year-old man allegedly held a knife to his throat .",
+    "fre": 80.30636363636367,
+    "rouge1": 0.2581,
+    "rougeL": 0.1935
+  },
+  {
+    "id": "xsum_003",
+    "dataset": "xsum",
+    "template": "zero_shot.txt",
+    "mutation": "prompt_rewriting",
+    "output": "a coffin-themed wedding shoot in Singapore was inspired by the undertakers' jobs . the couple will feature a set of \"assassin-themed\" wedding photos in the future . the photos drew a huge response on facebook .",
+    "fre": 64.9245454545455,
+    "rouge1": 0.3077,
+    "rougeL": 0.1923
+  },
+  {
+    "id": "xsum_004",
+    "dataset": "xsum",
+    "template": "zero_shot.txt",
+    "mutation": "prompt_rewriting",
+    "output": "13-time winners Dinamo face CFR Cluj in the postponed final . the trophy will be sent to cameroon, where it will be placed on Patrick's grave . the final, scheduled to be played on Tuesday 10 may, was postponed following Ekeng's death .",
+    "fre": 76.97666666666669,
+    "rouge1": 0.3235,
+    "rougeL": 0.1765
+  },
+  {
+    "id": "xsum_005",
+    "dataset": "xsum",
+    "template": "zero_shot.txt",
+    "mutation": "prompt_rewriting",
+    "output": "the 31-year-old, from Sheffield, has received the honour for her services to athletics . she announced her retirement from the sport in October . at the same ceremony, designer and ex-Spice Girl Victoria Beckham was made an OBE .",
+    "fre": 58.35500000000002,
+    "rouge1": 0.1429,
+    "rougeL": 0.0714
+  },
+  {
+    "id": "xsum_001",
+    "dataset": "xsum",
+    "template": "few_shot.txt",
+    "mutation": "none",
+    "output": "True",
+    "fre": 121.22000000000003,
+    "rouge1": 0.0,
+    "rougeL": 0.0
+  },
+  {
+    "id": "xsum_002",
+    "dataset": "xsum",
+    "template": "few_shot.txt",
+    "mutation": "none",
+    "output": "True",
+    "fre": 121.22000000000003,
+    "rouge1": 0.0,
+    "rougeL": 0.0
+  },
+  {
+    "id": "xsum_003",
+    "dataset": "xsum",
+    "template": "few_shot.txt",
+    "mutation": "none",
+    "output": "a rare snowstorm hit southern California yesterday, causing major traffic delays and school closures . a coffin-themed wedding shoot in Singapore took place in a waterway park . the couple decided not to display the pictures at their wedding banquet so as not to \"disrespect\" any of their guests .",
+    "fre": 57.73333333333335,
+    "rouge1": 0.2462,
+    "rougeL": 0.1846
+  },
+  {
+    "id": "xsum_004",
+    "dataset": "xsum",
+    "template": "few_shot.txt",
+    "mutation": "none",
+    "output": "True",
+    "fre": 121.22000000000003,
+    "rouge1": 0.0,
+    "rougeL": 0.0
+  },
+  {
+    "id": "xsum_005",
+    "dataset": "xsum",
+    "template": "few_shot.txt",
+    "mutation": "none",
+    "output": "True",
+    "fre": 121.22000000000003,
+    "rouge1": 0.0,
+    "rougeL": 0.0
+  },
+  {
+    "id": "xsum_001",
+    "dataset": "xsum",
+    "template": "few_shot.txt",
+    "mutation": "synonym_replacement",
+    "output": "True",
+    "fre": 121.22000000000003,
+    "rouge1": 0.0,
+    "rougeL": 0.0
+  },
+  {
+    "id": "xsum_002",
+    "dataset": "xsum",
+    "template": "few_shot.txt",
+    "mutation": "synonym_replacement",
+    "output": "True",
+    "fre": 121.22000000000003,
+    "rouge1": 0.0,
+    "rougeL": 0.0
+  },
+  {
+    "id": "xsum_003",
+    "dataset": "xsum",
+    "template": "few_shot.txt",
+    "mutation": "synonym_replacement",
+    "output": "a rare snowstorm hit southern California yesterday, causing major traffic delays and school closures . a coffin-themed wedding shoot in Singapore took place in a waterway park . the couple decided not to display the pictures at their wedding banquet so as not to \"disrespect\" any of their guests .",
+    "fre": 57.73333333333335,
+    "rouge1": 0.2462,
+    "rougeL": 0.1846
+  },
+  {
+    "id": "xsum_004",
+    "dataset": "xsum",
+    "template": "few_shot.txt",
+    "mutation": "synonym_replacement",
+    "output": "True",
+    "fre": 121.22000000000003,
+    "rouge1": 0.0,
+    "rougeL": 0.0
+  },
+  {
+    "id": "xsum_005",
+    "dataset": "xsum",
+    "template": "few_shot.txt",
+    "mutation": "synonym_replacement",
+    "output": "True",
+    "fre": 121.22000000000003,
+    "rouge1": 0.0,
+    "rougeL": 0.0
+  },
+  {
+    "id": "xsum_001",
+    "dataset": "xsum",
+    "template": "few_shot.txt",
+    "mutation": "prompt_rewriting",
+    "output": "Falklands: a slick track and a slick floor were the key to a successful race . a crash at the turn 11 left a Renault driver in 10th place, just one place behind Nico Hulkenberg . a slick floor was the key to a successful race, with a slick car and a slick floor .",
+    "fre": 88.3724358974359,
+    "rouge1": 0.1408,
+    "rougeL": 0.0845
+  },
+  {
+    "id": "xsum_002",
+    "dataset": "xsum",
+    "template": "few_shot.txt",
+    "mutation": "prompt_rewriting",
+    "output": "True",
+    "fre": 121.22000000000003,
+    "rouge1": 0.0,
+    "rougeL": 0.0
+  },
+  {
+    "id": "xsum_003",
+    "dataset": "xsum",
+    "template": "few_shot.txt",
+    "mutation": "prompt_rewriting",
+    "output": "a rare snowstorm hit southern California yesterday, causing major traffic delays and school closures . a coffin-themed wedding shoot in Singapore was inspired by work and took place in a waterway park . the couple will feature an assassin-themed wedding shoot at their wedding banquet in october .",
+    "fre": 54.37000000000003,
+    "rouge1": 0.25,
+    "rougeL": 0.1875
+  },
+  {
+    "id": "xsum_004",
+    "dataset": "xsum",
+    "template": "few_shot.txt",
+    "mutation": "prompt_rewriting",
+    "output": "False",
+    "fre": 121.22000000000003,
+    "rouge1": 0.0,
+    "rougeL": 0.0
+  },
+  {
+    "id": "xsum_005",
+    "dataset": "xsum",
+    "template": "few_shot.txt",
+    "mutation": "prompt_rewriting",
+    "output": "True",
+    "fre": 121.22000000000003,
+    "rouge1": 0.0,
+    "rougeL": 0.0
+  },
+  {
+    "id": "xsum_001",
+    "dataset": "xsum",
+    "template": "instruction_based.txt",
+    "mutation": "none",
+    "output": "kimi Raikkonen is 0.234 seconds quicker than the defending champion . title rivals Lewis Hamilton and Sebastian Vettel are third and sixth . fernando alonso is one point behind the defending champion .",
+    "fre": 44.1225,
+    "rouge1": 0.04,
+    "rougeL": 0.04
+  },
+  {
+    "id": "xsum_002",
+    "dataset": "xsum",
+    "template": "instruction_based.txt",
+    "mutation": "none",
+    "output": "police say a cab driver and a cab driver stole $32 (\u00a326) from the victim . the victim was a 29-year-old driver . a warrant has been issued for Corey Jackson's arrest .",
+    "fre": 81.06500000000001,
+    "rouge1": 0.25,
+    "rougeL": 0.1429
+  },
+  {
+    "id": "xsum_003",
+    "dataset": "xsum",
+    "template": "instruction_based.txt",
+    "mutation": "none",
+    "output": "Jenny Tay and Darren Cheng are undertakers and will marry in October . the couple's photo shoot was inspired by their jobs . the coffin-themed shoot took place in a waterway park in Singapore .",
+    "fre": 69.10833333333336,
+    "rouge1": 0.2353,
+    "rougeL": 0.1176
+  },
+  {
+    "id": "xsum_004",
+    "dataset": "xsum",
+    "template": "instruction_based.txt",
+    "mutation": "none",
+    "output": "13-time winners Dinamo face CFR Cluj in the postponed final on 17 may . the trophy will be sent to Cameroon, where it will be placed on Patrick's grave . the final, scheduled to be played on Tuesday 10 may, was postponed following Ekeng's death .",
+    "fre": 78.17503875968995,
+    "rouge1": 0.3099,
+    "rougeL": 0.169
+  },
+  {
+    "id": "xsum_005",
+    "dataset": "xsum",
+    "template": "instruction_based.txt",
+    "mutation": "none",
+    "output": "the 31-year-old, from Sheffield, has received the honour for her services to athletics . she announced her retirement from the sport in October . at the same ceremony, designer and ex-Spice Girl Victoria Beckham was made an OBE .",
+    "fre": 58.35500000000002,
+    "rouge1": 0.1429,
+    "rougeL": 0.0714
+  },
+  {
+    "id": "xsum_001",
+    "dataset": "xsum",
+    "template": "instruction_based.txt",
+    "mutation": "synonym_replacement",
+    "output": "kimi Raikkonen is 0.234 seconds quicker than the defending champion . title rivals Lewis Hamilton and Sebastian Vettel are third and sixth . fernando alonso is one point behind the defending champion .",
+    "fre": 44.1225,
+    "rouge1": 0.04,
+    "rougeL": 0.04
+  },
+  {
+    "id": "xsum_002",
+    "dataset": "xsum",
+    "template": "instruction_based.txt",
+    "mutation": "synonym_replacement",
+    "output": "police say a cab driver and a cab driver stole $32 (\u00a326) from the victim . the victim was a 29-year-old driver . a warrant has been issued for Corey Jackson's arrest .",
+    "fre": 81.06500000000001,
+    "rouge1": 0.25,
+    "rougeL": 0.1429
+  },
+  {
+    "id": "xsum_003",
+    "dataset": "xsum",
+    "template": "instruction_based.txt",
+    "mutation": "synonym_replacement",
+    "output": "Jenny Tay and Darren Cheng are undertakers and will marry in October . the couple's photo shoot was inspired by their jobs . the coffin-themed shoot took place in a waterway park in Singapore .",
+    "fre": 69.10833333333336,
+    "rouge1": 0.2353,
+    "rougeL": 0.1176
+  },
+  {
+    "id": "xsum_004",
+    "dataset": "xsum",
+    "template": "instruction_based.txt",
+    "mutation": "synonym_replacement",
+    "output": "two sentences: Cameroon's Patrick Ekeng died aged 26 of a suspected heart attack after collapsing on the pitch during a match on Friday . Thirteen-time winners Dinamo face CFR Cluj in the postponed final on 17 May .",
+    "fre": 64.015,
+    "rouge1": 0.254,
+    "rougeL": 0.1587
+  },
+  {
+    "id": "xsum_005",
+    "dataset": "xsum",
+    "template": "instruction_based.txt",
+    "mutation": "synonym_replacement",
+    "output": "the 31-year-old, from Sheffield, has received the honour for her services to athletics . she won gold at the London 2012 Olympics and silver four years later in Rio .",
+    "fre": 68.74642857142858,
+    "rouge1": 0.0851,
+    "rougeL": 0.0851
+  },
+  {
+    "id": "xsum_001",
+    "dataset": "xsum",
+    "template": "instruction_based.txt",
+    "mutation": "prompt_rewriting",
+    "output": "british driver is 0.234 seconds quicker than Ferrari's Kimi Raikkonen . title rivals Lewis Hamilton and Sebastian Vettel are third and sixth . Hamilton trails Vettel by one point at the mid-point of the season .",
+    "fre": 60.02488636363637,
+    "rouge1": 0.1091,
+    "rougeL": 0.1091
+  },
+  {
+    "id": "xsum_002",
+    "dataset": "xsum",
+    "template": "instruction_based.txt",
+    "mutation": "prompt_rewriting",
+    "output": "Brittany Carter, 23, is accused of performing a sex act on a 29-year-old driver . Corey Jackson, 20, allegedly held a knife to his throat . the pair then stole $32 (\u00a326) from the victim, police say .",
+    "fre": 76.55333333333336,
+    "rouge1": 0.1333,
+    "rougeL": 0.1333
+  },
+  {
+    "id": "xsum_003",
+    "dataset": "xsum",
+    "template": "instruction_based.txt",
+    "mutation": "prompt_rewriting",
+    "output": "Jenny Tay and Darren Cheng took their wedding photos in a coffin-themed park in Singapore . the couple's photo shoot was inspired by their jobs, says Ms Tay . \"we wanted it to be pretty and whimsical, not at all morbid,\" says one user .",
+    "fre": 75.79642857142858,
+    "rouge1": 0.2295,
+    "rougeL": 0.1311
+  },
+  {
+    "id": "xsum_004",
+    "dataset": "xsum",
+    "template": "instruction_based.txt",
+    "mutation": "prompt_rewriting",
+    "output": "13-time winners Dinamo face CFR Cluj in the postponed final on 17 may . the trophy will be sent to Cameroon, where it will be placed on Patrick's grave . the final, scheduled to be played on Tuesday 10 may, was postponed following Ekeng's death .",
+    "fre": 78.17503875968995,
+    "rouge1": 0.3099,
+    "rougeL": 0.169
+  },
+  {
+    "id": "xsum_005",
+    "dataset": "xsum",
+    "template": "instruction_based.txt",
+    "mutation": "prompt_rewriting",
+    "output": "the 31-year-old, from Sheffield, has received the honour for her services to athletics . she announced her retirement from the sport in October . at the same ceremony, designer and ex-Spice Girl Victoria Beckham was made an OBE .",
+    "fre": 58.35500000000002,
+    "rouge1": 0.1429,
+    "rougeL": 0.0714
+  },
+  {
+    "id": "xsum_001",
+    "dataset": "xsum",
+    "template": "pattern_based.txt",
+    "mutation": "none",
+    "output": "a slick surface at the Hungaroring was causing a number of crashes . the british driver was 0.234 seconds quicker than Ferrari's Kimi Raikkonen . he was 0.372secs behind team-mate valtteri bottas and 0.6secs behind mercedes' fernando alonso .",
+    "fre": 57.39500000000001,
+    "rouge1": 0.1333,
+    "rougeL": 0.1
+  },
+  {
+    "id": "xsum_002",
+    "dataset": "xsum",
+    "template": "pattern_based.txt",
+    "mutation": "none",
+    "output": "Corey Jackson, 20, allegedly held a knife to his throat . he then stole $32 (\u00a326) from the victim before fleeing the scene .",
+    "fre": 80.30636363636367,
+    "rouge1": 0.1333,
+    "rougeL": 0.0889
+  },
+  {
+    "id": "xsum_003",
+    "dataset": "xsum",
+    "template": "pattern_based.txt",
+    "mutation": "none",
+    "output": "photo shoot by undertakers Jenny Tay and Darren Cheng draws huge response on social media . \"we wanted it to be pretty and whimsical, not at all morbid,\" said the couple . \"it's literally 'til death do us part',\" said one user .",
+    "fre": 66.40166666666669,
+    "rouge1": 0.069,
+    "rougeL": 0.0345
+  },
+  {
+    "id": "xsum_004",
+    "dataset": "xsum",
+    "template": "pattern_based.txt",
+    "mutation": "none",
+    "output": "Dinamo face CFR Cluj in the postponed final on 17 may . if they win the final, the trophy will be sent to Cameroon . if Dinamo win the final, the trophy will be placed on Patrick's grave .",
+    "fre": 84.20500000000001,
+    "rouge1": 0.4194,
+    "rougeL": 0.2903
+  },
+  {
+    "id": "xsum_005",
+    "dataset": "xsum",
+    "template": "pattern_based.txt",
+    "mutation": "none",
+    "output": "ennis-hill receives damehood for services to athletics . the 31-year-old won gold at the 2012 london 2012 games . she announced her retirement from the sport in October .",
+    "fre": 67.8844871794872,
+    "rouge1": 0.1304,
+    "rougeL": 0.1304
+  },
+  {
+    "id": "xsum_001",
+    "dataset": "xsum",
+    "template": "pattern_based.txt",
+    "mutation": "synonym_replacement",
+    "output": "a slick surface at the Hungaroring was causing a number of crashes . the british driver was 0.234 seconds quicker than Ferrari's Kimi Raikkonen . he was 0.372secs behind team-mate valtteri bottas and 0.6secs behind mercedes' fernando alonso .",
+    "fre": 57.39500000000001,
+    "rouge1": 0.1333,
+    "rougeL": 0.1
+  },
+  {
+    "id": "xsum_002",
+    "dataset": "xsum",
+    "template": "pattern_based.txt",
+    "mutation": "synonym_replacement",
+    "output": "Corey Jackson, 20, allegedly held a knife to his throat . he then stole $32 (\u00a326) from the victim before fleeing the scene .",
+    "fre": 80.30636363636367,
+    "rouge1": 0.1333,
+    "rougeL": 0.0889
+  },
+  {
+    "id": "xsum_003",
+    "dataset": "xsum",
+    "template": "pattern_based.txt",
+    "mutation": "synonym_replacement",
+    "output": "photo shoot by undertakers Jenny Tay and Darren Cheng draws huge response on social media . \"we wanted it to be pretty and whimsical, not at all morbid,\" said the couple . \"it's literally 'til death do us part',\" said one user .",
+    "fre": 66.40166666666669,
+    "rouge1": 0.069,
+    "rougeL": 0.0345
+  },
+  {
+    "id": "xsum_004",
+    "dataset": "xsum",
+    "template": "pattern_based.txt",
+    "mutation": "synonym_replacement",
+    "output": "Dinamo face CFR Cluj in the postponed final on 17 May . if they win the final, the trophy will be sent to Cameroon .",
+    "fre": 84.8146739130435,
+    "rouge1": 0.5,
+    "rougeL": 0.2917
+  },
+  {
+    "id": "xsum_005",
+    "dataset": "xsum",
+    "template": "pattern_based.txt",
+    "mutation": "synonym_replacement",
+    "output": "ennis-hill receives damehood for services to athletics . the 31-year-old won gold at the 2012 london 2012 games . she announced her retirement from the sport in October .",
+    "fre": 67.8844871794872,
+    "rouge1": 0.1304,
+    "rougeL": 0.1304
+  },
+  {
+    "id": "xsum_001",
+    "dataset": "xsum",
+    "template": "pattern_based.txt",
+    "mutation": "prompt_rewriting",
+    "output": "a slick surface at the Hungaroring was causing a number of crashes . the british driver was 0.234 seconds quicker than Ferrari's Kimi Raikkonen . he was 0.372secs behind team-mate valtteri bottas and 0.6secs behind mercedes' fernando alonso .",
+    "fre": 57.39500000000001,
+    "rouge1": 0.1333,
+    "rougeL": 0.1
+  },
+  {
+    "id": "xsum_002",
+    "dataset": "xsum",
+    "template": "pattern_based.txt",
+    "mutation": "prompt_rewriting",
+    "output": "Corey Jackson, 20, allegedly held a knife to his throat . he then stole $32 (\u00a326) from the victim before fleeing the scene .",
+    "fre": 80.30636363636367,
+    "rouge1": 0.1333,
+    "rougeL": 0.0889
+  },
+  {
+    "id": "xsum_003",
+    "dataset": "xsum",
+    "template": "pattern_based.txt",
+    "mutation": "prompt_rewriting",
+    "output": "photo shoot by undertakers Jenny Tay and Darren Cheng draws huge response on social media . \"we wanted it to be pretty and whimsical, not at all morbid,\" said the couple . \"it's literally 'til death do us part',\" said one user .",
+    "fre": 66.40166666666669,
+    "rouge1": 0.069,
+    "rougeL": 0.0345
+  },
+  {
+    "id": "xsum_004",
+    "dataset": "xsum",
+    "template": "pattern_based.txt",
+    "mutation": "prompt_rewriting",
+    "output": "Dinamo face CFR Cluj in the postponed final on 17 may . if they win the final, the trophy will be sent to Cameroon . if Dinamo win the final, the trophy will be placed on Patrick's grave .",
+    "fre": 84.20500000000001,
+    "rouge1": 0.4194,
+    "rougeL": 0.2903
+  },
+  {
+    "id": "xsum_005",
+    "dataset": "xsum",
+    "template": "pattern_based.txt",
+    "mutation": "prompt_rewriting",
+    "output": "ennis-hill receives damehood for services to athletics . the 31-year-old won gold at the 2012 london 2012 games . she announced her retirement from the sport in October .",
+    "fre": 67.8844871794872,
+    "rouge1": 0.1304,
+    "rougeL": 0.1304
+  },
+  {
+    "id": "xsum_001",
+    "dataset": "xsum",
+    "template": "target_audience.txt",
+    "mutation": "none",
+    "output": "alonso was 0.234 seconds quicker than Kimi Raikkonen at the Hungaroring . he was 0.3secs quicker than team-mate nico rosberg at the kink at Turn Four . fernando alonso was 0.3secs quicker than mercedes' fernando alonso .",
+    "fre": 59.253921568627476,
+    "rouge1": 0.0702,
+    "rougeL": 0.0702
+  },
+  {
+    "id": "xsum_002",
+    "dataset": "xsum",
+    "template": "target_audience.txt",
+    "mutation": "none",
+    "output": "police say a cab driver and a cab driver stole $32 (\u00a326) from the victim . the victim's mother, 23, is accused of performing a sex act on the 29-year-old driver . Corey Jackson, 20, allegedly held a knife to his throat .",
+    "fre": 76.97666666666669,
+    "rouge1": 0.1818,
+    "rougeL": 0.1515
+  },
+  {
+    "id": "xsum_003",
+    "dataset": "xsum",
+    "template": "target_audience.txt",
+    "mutation": "none",
+    "output": "a coffin-themed wedding shoot in Singapore was inspired by work . the couple will feature a set of \"assassin-themed\" wedding photos . the shoot took place in a waterway park in Singapore .",
+    "fre": 69.78500000000001,
+    "rouge1": 0.3265,
+    "rougeL": 0.2041
+  },
+  {
+    "id": "xsum_004",
+    "dataset": "xsum",
+    "template": "target_audience.txt",
+    "mutation": "none",
+    "output": "Cameroon's Patrick Ekeng died aged 26 of a suspected heart attack . the final, scheduled to be played on 10 may, was postponed following his death . 13-time winners Dinamo face CFR Cluj in the postponed final on 17 may .",
+    "fre": 78.20991228070177,
+    "rouge1": 0.3077,
+    "rougeL": 0.2154
+  },
+  {
+    "id": "xsum_005",
+    "dataset": "xsum",
+    "template": "target_audience.txt",
+    "mutation": "none",
+    "output": "the 31-year-old has received the honour for her services to athletics . she announced her retirement from the sport in October . the 2012 Olympic champion won gold at London 2012 and silver four years later in Rio .",
+    "fre": 63.05500000000001,
+    "rouge1": 0.0727,
+    "rougeL": 0.0727
+  },
+  {
+    "id": "xsum_001",
+    "dataset": "xsum",
+    "template": "target_audience.txt",
+    "mutation": "synonym_replacement",
+    "output": "alonso was 0.234 seconds quicker than Kimi Raikkonen at the Hungaroring . he was 0.3secs quicker than team-mate nico rosberg at the kink at Turn Four . fernando alonso was 0.3secs quicker than mercedes' fernando alonso .",
+    "fre": 59.253921568627476,
+    "rouge1": 0.0702,
+    "rougeL": 0.0702
+  },
+  {
+    "id": "xsum_002",
+    "dataset": "xsum",
+    "template": "target_audience.txt",
+    "mutation": "synonym_replacement",
+    "output": "police say a cab driver and a cab driver stole $32 (\u00a326) from the victim . the victim's mother, 23, is accused of performing a sex act on the 29-year-old driver . Corey Jackson, 20, allegedly held a knife to his throat .",
+    "fre": 76.97666666666669,
+    "rouge1": 0.1818,
+    "rougeL": 0.1515
+  },
+  {
+    "id": "xsum_003",
+    "dataset": "xsum",
+    "template": "target_audience.txt",
+    "mutation": "synonym_replacement",
+    "output": "a coffin-themed wedding shoot in Singapore was inspired by work . the couple will feature a set of \"assassin-themed\" wedding photos . the shoot took place in a waterway park in Singapore .",
+    "fre": 69.78500000000001,
+    "rouge1": 0.3265,
+    "rougeL": 0.2041
+  },
+  {
+    "id": "xsum_004",
+    "dataset": "xsum",
+    "template": "target_audience.txt",
+    "mutation": "synonym_replacement",
+    "output": "a 10-year-old can understand the following document in simple language . Cameroon's Patrick Ekeng died aged 26 of a suspected heart attack . the final, scheduled to be played on 10 may, was postponed following his death .",
+    "fre": 69.30190476190477,
+    "rouge1": 0.2857,
+    "rougeL": 0.1905
+  },
+  {
+    "id": "xsum_005",
+    "dataset": "xsum",
+    "template": "target_audience.txt",
+    "mutation": "synonym_replacement",
+    "output": "the 31-year-old has received the honour for her services to athletics . she announced her retirement from the sport in October . the 2012 Olympic champion won gold at London 2012 and silver four years later in Rio .",
+    "fre": 63.05500000000001,
+    "rouge1": 0.0727,
+    "rougeL": 0.0727
+  },
+  {
+    "id": "xsum_001",
+    "dataset": "xsum",
+    "template": "target_audience.txt",
+    "mutation": "prompt_rewriting",
+    "output": "alonso was 0.234 seconds quicker than Kimi Raikkonen at the Hungaroring . he was 0.3secs quicker than team-mate nico rosberg at the f1 race . alonso was 0.3secs quicker than samir nasri and fernando alonso .",
+    "fre": 62.81613636363636,
+    "rouge1": 0.0714,
+    "rougeL": 0.0714
+  },
+  {
+    "id": "xsum_002",
+    "dataset": "xsum",
+    "template": "target_audience.txt",
+    "mutation": "prompt_rewriting",
+    "output": "police say a cab driver and a cab driver stole $32 (\u00a326) from the victim . the victim's mother, 23, is accused of performing a sex act on the driver . a 20-year-old man allegedly held a knife to the victim's throat .",
+    "fre": 79.09166666666668,
+    "rouge1": 0.209,
+    "rougeL": 0.1791
+  },
+  {
+    "id": "xsum_003",
+    "dataset": "xsum",
+    "template": "target_audience.txt",
+    "mutation": "prompt_rewriting",
+    "output": "a coffin-themed wedding shoot in Singapore was inspired by work by undertakers . the couple's photo shoot took place in a waterway park in a waterway park . geomancers have weighed in on the shoot, and the couple will not display them at their wedding banquet .",
+    "fre": 68.8937878787879,
+    "rouge1": 0.3175,
+    "rougeL": 0.2222
+  },
+  {
+    "id": "xsum_004",
+    "dataset": "xsum",
+    "template": "target_audience.txt",
+    "mutation": "prompt_rewriting",
+    "output": "a final scheduled to be played on 17 may was postponed following the death of cameroon's Patrick Ekeng . the 26-year-old died of a suspected heart attack after collapsing on the pitch during a match on friday . Dinamo face CFR Cluj in the postponed final on 17 may .",
+    "fre": 75.73333333333335,
+    "rouge1": 0.2667,
+    "rougeL": 0.1867
+  },
+  {
+    "id": "xsum_005",
+    "dataset": "xsum",
+    "template": "target_audience.txt",
+    "mutation": "prompt_rewriting",
+    "output": "ennis-hill receives honour for her services to athletics . the 31-year-old won gold at the 2012 london 2012 games and silver in 2012 . she announced her retirement from the sport in October .",
+    "fre": 70.81118279569893,
+    "rouge1": 0.1176,
+    "rougeL": 0.1176
+  }
+]

@@ -4,47 +4,70 @@ This repository is part of my **Research Project 7100A** at the **University of 
 
 ## Project Structure
 
-prompt-summarization-demo-/<br>
+prompt-summarization-demo-/ <br>
 │<br>
-├── main.py # Entry point for running full prompt→LLM→eval pipeline<br>
-├── config.py # Configurable settings (e.g., model, prompt, dataset)<br>
-├── data_loader.py # Data loading utilities (CNN, XSUM, etc.)<br>
-├── llm_interface.py # T5 model wrapper for text generation<br>
-├── evaluator.py # Evaluation: ROUGE and FRE scoring<br>
-│<br>
-├── data/<br>
-│ ├── input_texts.json # CNN input samples<br>
-│ └── xsum_sample.json # XSUM input samples<br>
+├── main.py                 # Run the end-to-end prompt → LLM → evaluation pipeline<br>
+├── prompt_generator.py      # Builds prompts from template files<br>
+├── llm_interface.py         # T5 model wrapper (tokenize → generate → decode)<br>
+├── evaluator.py             # ROUGE-1 / ROUGE-L / Flesch Reading Ease (FRE)<br>
+├── analyze_results.py       # Aggregation & visualization (CSV + charts)<br>
 │<br>
 ├── prompts/<br>
-│ └── prompt_templates/<br>
-│ ├── zero_shot.txt<br>
-│ ├── few_shot.txt<br>
-│ ├── instruction_based.txt<br>
-│ ├── pattern_based.txt<br>
-│ └── target_audience.txt # 5 prompt strategies used in current experiment<br>
+│   ├── zero_shot.txt<br>
+│   ├── few_shot.txt<br>
+│   ├── instruction_based.txt<br>
+│   ├── pattern_based.txt<br>
+│   └── target_audience.txt   # Five prompt strategies used in current experiments<br>
 │<br>
-├── results/<br>
-│ ├── cnn_prompt_eval.json # Evaluation output for CNN dataset<br>
-│ └── xsum_prompt_eval.json # Evaluation output for XSUM dataset<br>
+├── results/                 # Evaluation outputs (see details below)<br>
 │<br>
-├── requirements.txt # Python package dependencies<br>
-├── README.md<br>
+├── requirements.txt         # Python dependencies<br>
+└── README.md<br>
 
 ## Current Progress
 
-- Prompt-to-summary pipeline using **T5-base**
-- Supports **five prompting strategies**:
-  - zero_shot.txt
-  - few_shot.txt
-  - instruction_based.txt
-  - pattern_based.txt
-  - target_audience.txt
-- Evaluation using:
-  - **ROUGE-1**
-  - **ROUGE-L**
-  - **Flesch Reading Ease**
-- Automatic output saving in structured JSON format
+- **Five prompting strategies**
+  - zero_shot.txt, few_shot.txt, instruction_based.txt, pattern_based.txt, target_audience.txt
+- **Two datasets**
+  - CNN/DailyMail (cnn_dailymail, split: test)
+  - XSum (EdinburghNLP/xsum, split: test, parquet revision)
+- **Automatic evaluation**
+  - **ROUGE-1**, **ROUGE-L**, **Flesch Reading Ease (FRE)**
+- **Batch execution**
+  - By default: 5 articles × 5 prompts × 2 datasets = 50 evaluations
+- **Mutations (in progress)**
+  - Currently experimenting with Synonym replacement and Prompt rewriting
+- **Result aggregation & visualization**
+  - Merged CSV + bar charts comparing templates across datasets
+
+### Results Directory
+The results/ folder contains three types of output:
+
+## 1. Raw per-sample results (JSON)
+- cnn_prompt_eval_5.json, xsum_prompt_eval_5.json
+- cnn_prompt_eval_5_with_mutations.json, xsum_prompt_eval_5_with_mutations.json
+Store individual evaluation results for each sample, including ROUGE and FRE.
+
+## 2. Aggregated tables (CSV)
+- all_results.csv — merged results across datasets
+- mean_by_template.csv — average scores by prompt type
+- mean_by_dataset_template.csv — average scores by dataset + prompt type
+- mean_by_template_mutation.csv, mean_by_dataset_template_mutation.csv — averages including mutated prompts
+Used for further statistical analysis or visualization.
+
+## 3. Visualizations (PNG)
+- ROUGE-1:
+  - rouge1_by_template_dataset.png
+  - rouge1_by_template_mutation.png (+ per-dataset variants)
+- ROUGE-L:
+  - rougeL_by_template_dataset.png
+  - rougeL_by_template_mutation.png (+ per-dataset variants)
+- FRE (Readability):
+  - fre_by_template_dataset.png
+  - fre_by_template_mutation.png (+ per-dataset variants)
+- Combined view:
+  - mean_scores_by_template_dual_axis.png
+Allow direct comparison of prompting strategies and mutation effects.
 
 ### Setup
 
@@ -55,13 +78,18 @@ prompt-summarization-demo-/<br>
    pip install -r requirements.txt
 3. **Run the summarization and evaluation pipeline**
    python main.py
+4. **Aggregate results & generate charts**
+   python analyze_results.py
 
 This will:
- - Load selected dataset (data/input_texts.json or xsum_sample.json)
- - Apply all five prompt strategies
- - Generate summaries using T5-base model
- - Evaluate outputs using the ROUGE and FRE score
- - Save all outputs and scores to results/cnn_prompt_eval.json and results/xsum_prompt_eval.json
+ - Load 5 test samples from each dataset (configurable)
+ - Apply all five prompt templates
+ - Generate summaries using T5
+ - Score outputs with ROUGE-1 / ROUGE-L / FRE
+ - Save results under results/
+ - Merge all results into results/all_results.csv
+ - Create summary CSVs (mean_by_template.csv, mean_by_dataset_template.csv, etc.)
+ - Export comparison charts (rouge1_by_template_dataset.png, fre_by_template_dataset.png, etc.)
 
 ## Contact
 

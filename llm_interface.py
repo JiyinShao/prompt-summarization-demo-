@@ -1,8 +1,8 @@
 from transformers import T5Tokenizer, T5ForConditionalGeneration
 import torch
 
-tokenizer = T5Tokenizer.from_pretrained("t5-small")
-model = T5ForConditionalGeneration.from_pretrained("t5-small")
+tokenizer = T5Tokenizer.from_pretrained("t5-base", legency = False)
+model = T5ForConditionalGeneration.from_pretrained("t5-base")
 
 def query_llm(prompt):
     input_ids = tokenizer(prompt, return_tensors="pt", truncation=True).input_ids
