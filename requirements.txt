@@ -3,3 +3,6 @@ torch
 sentencepiece
 textstat
 rouge-score
+datasets
+pandas
+matplotlib

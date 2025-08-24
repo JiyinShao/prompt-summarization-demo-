@@ -11,6 +11,7 @@ prompt-summarization-demo-/ <br>
 ├── llm_interface.py         # T5 model wrapper (tokenize → generate → decode)<br>
 ├── evaluator.py             # ROUGE-1 / ROUGE-L / Flesch Reading Ease (FRE)<br>
 ├── analyze_results.py       # Aggregation & visualization (CSV + charts)<br>
+├── mutations.py             # Mutation strategies for prompts (lexical, structural, style, audience, stepwise)<br>
 │<br>
 ├── prompts/<br>
 │   ├── zero_shot.txt<br>
@@ -35,8 +36,12 @@ prompt-summarization-demo-/ <br>
   - **ROUGE-1**, **ROUGE-L**, **Flesch Reading Ease (FRE)**
 - **Batch execution**
   - By default: 5 articles × 5 prompts × 2 datasets = 50 evaluations
-- **Mutations (in progress)**
-  - Currently experimenting with Synonym replacement and Prompt rewriting
+- **Mutation strategies (five implemented)**
+  - Synonym replacement
+  - Prompt rewriting
+  - Add style instruction
+  - Add audience information
+  - Stepwise prompt
 - **Result aggregation & visualization**
   - Merged CSV + bar charts comparing templates across datasets
 
@@ -44,7 +49,6 @@ prompt-summarization-demo-/ <br>
 The results/ folder contains three types of output:
 
 ## 1. Raw per-sample results (JSON)
-- cnn_prompt_eval_5.json, xsum_prompt_eval_5.json
 - cnn_prompt_eval_5_with_mutations.json, xsum_prompt_eval_5_with_mutations.json
 Store individual evaluation results for each sample, including ROUGE and FRE.
 
