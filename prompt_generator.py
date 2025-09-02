@@ -1,4 +1,16 @@
-def generate_prompt(text, template_file="zero_shot.txt"):
-    with open(f"prompts/prompt_templates/{template_file}", "r", encoding="utf-8") as f:
+import os
+
+TEMPLATE_DIR = os.path.join("prompts", "prompt_templates")
+
+def generate_prompt(article: str, template_file: str) -> str:
+    path = os.path.join(TEMPLATE_DIR, template_file)
+    if not os.path.exists(path):
+        raise FileNotFoundError(f"Prompt template not found: {path}")
+
+    with open(path, "r", encoding="utf-8") as f:
         template = f.read()
-    return template.replace("{text}", text)
+
+    if "{text}" in template:
+        return template.replace("{text}", article)
+    else:
+        return f"{template}\n\nArticle:\n{article}"

@@ -6,12 +6,14 @@ This repository is part of my **Research Project 7100A** at the **University of 
 
 prompt-summarization-demo-/ <br>
 │<br>
-├── main.py                 # Run the end-to-end prompt → LLM → evaluation pipeline<br>
+├── main.py                  # Run the first loop of optimizer<br>
+├── evolution.py             # Select the TOP 5 results and continue generation<br>
 ├── prompt_generator.py      # Builds prompts from template files<br>
 ├── llm_interface.py         # T5 model wrapper (tokenize → generate → decode)<br>
 ├── evaluator.py             # ROUGE-1 / ROUGE-L / Flesch Reading Ease (FRE)<br>
 ├── analyze_results.py       # Aggregation & visualization (CSV + charts)<br>
 ├── mutations.py             # Mutation strategies for prompts (lexical, structural, style, audience, stepwise)<br>
+├── config.py                # Define the Threshold of score and MAX rounds<br>
 │<br>
 ├── prompts/<br>
 │   ├── zero_shot.txt<br>
@@ -35,8 +37,9 @@ prompt-summarization-demo-/ <br>
 - **Automatic evaluation**
   - **ROUGE-1**, **ROUGE-L**, **Flesch Reading Ease (FRE)**
 - **Batch execution**
-  - By default: 5 articles × 5 prompts × 2 datasets = 50 evaluations
-- **Mutation strategies (five implemented)**
+  - First Round: 2 datasets 2 articles × 5 prompts x 6 mutations = 120 evaluations
+- **Mutation strategies**
+  - None
   - Synonym replacement
   - Prompt rewriting
   - Add style instruction
@@ -49,28 +52,12 @@ prompt-summarization-demo-/ <br>
 The results/ folder contains three types of output:
 
 ## 1. Raw per-sample results (JSON)
-- cnn_prompt_eval_5_with_mutations.json, xsum_prompt_eval_5_with_mutations.json
-Store individual evaluation results for each sample, including ROUGE and FRE.
+Store individual evaluation results for each dataset and each round. Store the selected combination in each round. 
 
 ## 2. Aggregated tables (CSV)
-- all_results.csv — merged results across datasets
-- mean_by_template.csv — average scores by prompt type
-- mean_by_dataset_template.csv — average scores by dataset + prompt type
-- mean_by_template_mutation.csv, mean_by_dataset_template_mutation.csv — averages including mutated prompts
 Used for further statistical analysis or visualization.
 
 ## 3. Visualizations (PNG)
-- ROUGE-1:
-  - rouge1_by_template_dataset.png
-  - rouge1_by_template_mutation.png (+ per-dataset variants)
-- ROUGE-L:
-  - rougeL_by_template_dataset.png
-  - rougeL_by_template_mutation.png (+ per-dataset variants)
-- FRE (Readability):
-  - fre_by_template_dataset.png
-  - fre_by_template_mutation.png (+ per-dataset variants)
-- Combined view:
-  - mean_scores_by_template_dual_axis.png
 Allow direct comparison of prompting strategies and mutation effects.
 
 ### Setup
@@ -86,14 +73,12 @@ Allow direct comparison of prompting strategies and mutation effects.
    python analyze_results.py
 
 This will:
- - Load 5 test samples from each dataset (configurable)
+ - Load 2 test samples from each dataset (configurable)
  - Apply all five prompt templates
  - Generate summaries using T5
  - Score outputs with ROUGE-1 / ROUGE-L / FRE
  - Save results under results/
- - Merge all results into results/all_results.csv
- - Create summary CSVs (mean_by_template.csv, mean_by_dataset_template.csv, etc.)
- - Export comparison charts (rouge1_by_template_dataset.png, fre_by_template_dataset.png, etc.)
+ - Export comparison charts 
 
 ## Contact
 
