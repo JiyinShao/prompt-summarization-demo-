@@ -1,57 +1,89 @@
 import random
+import re
+
+def _append_constraints(prompt: str) -> str:
+    return (
+        f"{prompt}\n\n"
+        "Constraints:\n"
+        "- Output 3–5 sentences (≤ 60 words total).\n"
+        "- Be factual and concise; no preface or headings.\n"
+        "- Reuse key nouns/verbs from the source when possible.\n"
+        "- Keep names, numbers, places, and dates unchanged.\n"
+        "- Do not invent details; do not quote verbatim.\n"
+    )
 
 def synonym_replacement(prompt: str) -> str:
-    synonyms = {
-        "summary": ["overview", "brief", "recap"],
-        "summarize": ["condense", "shorten", "compress"],
-        "article": ["text", "document", "passage"],
-        "explain": ["describe", "clarify", "illustrate"],
-        "important": ["crucial", "key", "essential"],
-        "main": ["primary", "core", "principal"],
-        "points": ["aspects", "items", "factors"],
-        "highlight": ["emphasize", "underscore", "stress"],
+    vocab = {
+        "clearly": ["plainly", "explicitly"],
+        "brief": ["concise", "short"],
+        "important": ["key", "crucial"],
+        "main": ["primary", "central"],
+        "points": ["aspects", "facts"],
+        "explain": ["describe", "clarify"],
     }
-    words = prompt.split()
-    new_words = []
-    for w in words:
-        bare = w.strip(".,!?;:()[]{}\"'")
-        lw = bare.lower()
-        if lw in synonyms and random.random() < 0.3:
-            rep = random.choice(synonyms[lw])
-            rep = rep.capitalize() if bare[:1].isupper() else rep
-            new = w.replace(bare, rep)
-            new_words.append(new)
+    tokens = re.split(r"(\W+)", prompt)
+    out = []
+    for tok in tokens:
+        low = tok.lower()
+        if low in {"summary","summarize","article","document","text","passage"}:
+            out.append(tok)
+            continue
+        if low in vocab and random.random() < 0.12:
+            cand = random.choice(vocab[low])
+            cand = cand.capitalize() if tok[:1].isupper() else cand
+            out.append(cand)
         else:
-            new_words.append(w)
-    return " ".join(new_words)
+            out.append(tok)
+    base = "".join(out)
+    return _append_constraints(base)
 
 def prompt_rewriting(prompt: str) -> str:
     p = prompt.strip()
-    lower = p.lower()
-    if lower.startswith("summarize the following"):
-        return p.replace("Summarize the following", "The following should be summarized")
-    if lower.startswith("summarize:"):
-        return p.replace("summarize:", "the following should be summarized:")
-    return f"{p}\n\nRewritten: Ensure key points are highlighted and clauses are ordered for clarity."
+    p = re.sub(r"^\s*summarize\s*[:\-]?", "Write a brief, factual summary:", p, flags=re.I)
+    p = p.replace("Summarize the following", "Write a brief, factual summary of the following")
+    rewritten = (
+        f"{p}\n\n"
+        "Instruction:\n"
+        "- Write a coherent summary in 3–5 sentences.\n"
+        "- Prioritize the who/what/where/when/why.\n"
+        "- Prefer wording that appears in the source to maximize fidelity.\n"
+        "- Avoid bullets and formatting; output only the final summary."
+    )
+    return rewritten
 
 def style_instruction(prompt: str) -> str:
-    return f"{prompt}\n\nStyle: Use simple English, concise sentences, and bullet points if appropriate."
+    return (
+        f"{prompt}\n\n"
+        "Style:\n"
+        "- Clear, journalistic tone.\n"
+        "- 3–5 sentences; ≤ 35 words total.\n"
+        "- Use active voice and concrete subjects.\n"
+        "- Reuse key phrases from the article to maintain alignment.\n"
+        "- No lists, no preambles, no quotations."
+    )
 
 def audience_information(prompt: str) -> str:
-    return f"{prompt}\n\nAudience: Write for a 10-year-old reader with clear, accessible language."
+    return (
+        f"{prompt}\n\n"
+        "Audience:\n"
+        "- Non-expert adult reader.\n"
+        "- Keep terminology accurate; do not oversimplify named entities.\n"
+        "- Explain briefly only if a term is uncommon; otherwise reuse the original wording.\n"
+        "- Output 3–5 concise sentences without headings."
+    )
 
 def stepwise_prompt(prompt: str) -> str:
-    scaffold = (
-        "\n\nProcess:\n"
-        "1) Extract 3–5 key points from the text.\n"
-        "2) Rephrase them in your own words.\n"
-        "3) Compose a coherent final summary.\n"
-        "Output only the final summary."
+    return (
+        f"{prompt}\n\n"
+        "Process:\n"
+        "1) Identify 3–5 essential facts (subjects, actions, outcomes, numbers, places).\n"
+        "2) Compress them into 2–3 sentences while preserving names and numbers.\n"
+        "3) Prefer wording from the source when possible to ensure fidelity.\n"
+        "Output only the final summary, no list, no preface."
     )
-    return prompt + scaffold
 
 MUTATIONS = {
-    "none": lambda p: p,
+    "none": lambda p: _append_constraints(p),
     "synonym_replacement": synonym_replacement,
     "prompt_rewriting": prompt_rewriting,
     "style_instruction": style_instruction,
