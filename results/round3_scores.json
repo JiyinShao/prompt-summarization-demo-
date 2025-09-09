@@ -1,138 +1,114 @@
 [
   {
-    "template": "pattern_based.txt",
-    "mutation": "audience_information+synonym_replacement+none",
-    "rouge1": 0.5094,
-    "rougeL": 0.34415,
-    "fre": 62.720888440860236,
-    "compression_ratio": 0.11394331657665745
+    "template": "target_audience.txt",
+    "mutation": "none",
+    "rouge1": 0.47812,
+    "rougeL": 0.29301,
+    "fre": 63.16869391197689,
+    "compression_ratio": 0.12274580449022762
   },
   {
     "template": "pattern_based.txt",
-    "mutation": "audience_information+stepwise_prompt+none",
-    "rouge1": 0.50375,
-    "rougeL": 0.346075,
-    "fre": 62.41566666666669,
-    "compression_ratio": 0.11142170274380805
+    "mutation": "audience_information + none",
+    "rouge1": 0.47741,
+    "rougeL": 0.35195,
+    "fre": 63.771415121125884,
+    "compression_ratio": 0.109726669721998
   },
   {
     "template": "pattern_based.txt",
-    "mutation": "audience_information+style_instruction+stepwise_prompt",
-    "rouge1": 0.50375,
-    "rougeL": 0.346075,
-    "fre": 62.41566666666669,
-    "compression_ratio": 0.11142170274380805
+    "mutation": "audience_information + prompt_rewriting + none",
+    "rouge1": 0.47741,
+    "rougeL": 0.35195,
+    "fre": 63.771415121125884,
+    "compression_ratio": 0.109726669721998
   },
   {
     "template": "pattern_based.txt",
-    "mutation": "audience_information+stepwise_prompt+style_instruction",
-    "rouge1": 0.501725,
-    "rougeL": 0.34415,
-    "fre": 62.720888440860236,
-    "compression_ratio": 0.11322285548155761
+    "mutation": "audience_information + prompt_rewriting + stepwise_prompt",
+    "rouge1": 0.47741,
+    "rougeL": 0.35195,
+    "fre": 63.771415121125884,
+    "compression_ratio": 0.109726669721998
   },
   {
     "template": "pattern_based.txt",
-    "mutation": "audience_information+none",
-    "rouge1": 0.499525,
-    "rougeL": 0.3425,
-    "fre": 60.94941666666668,
-    "compression_ratio": 0.12511046355070476
+    "mutation": "audience_information + prompt_rewriting + style_instruction",
+    "rouge1": 0.47741,
+    "rougeL": 0.35195,
+    "fre": 63.771415121125884,
+    "compression_ratio": 0.109726669721998
   },
   {
     "template": "pattern_based.txt",
-    "mutation": "audience_information+style_instruction+none",
-    "rouge1": 0.499525,
-    "rougeL": 0.3425,
-    "fre": 60.94941666666668,
-    "compression_ratio": 0.12511046355070476
+    "mutation": "audience_information + prompt_rewriting + synonym_replacement",
+    "rouge1": 0.47741,
+    "rougeL": 0.35195,
+    "fre": 63.771415121125884,
+    "compression_ratio": 0.109726669721998
   },
   {
     "template": "pattern_based.txt",
-    "mutation": "stepwise_prompt+audience_information+none",
-    "rouge1": 0.494425,
-    "rougeL": 0.33745,
-    "fre": 62.74043817204303,
-    "compression_ratio": 0.11237864054285066
+    "mutation": "audience_information + stepwise_prompt + none",
+    "rouge1": 0.47741,
+    "rougeL": 0.35195,
+    "fre": 63.771415121125884,
+    "compression_ratio": 0.109726669721998
   },
   {
     "template": "pattern_based.txt",
-    "mutation": "stepwise_prompt+audience_information+style_instruction",
-    "rouge1": 0.4924,
-    "rougeL": 0.335525,
-    "fre": 63.045659946236576,
-    "compression_ratio": 0.11417979328060021
+    "mutation": "audience_information + stepwise_prompt + prompt_rewriting",
+    "rouge1": 0.47741,
+    "rougeL": 0.35195,
+    "fre": 63.771415121125884,
+    "compression_ratio": 0.109726669721998
   },
   {
     "template": "pattern_based.txt",
-    "mutation": "audience_information+synonym_replacement+stepwise_prompt",
-    "rouge1": 0.472725,
-    "rougeL": 0.32855,
-    "fre": 63.84389705882355,
-    "compression_ratio": 0.12078262875492361
+    "mutation": "audience_information + stepwise_prompt + style_instruction",
+    "rouge1": 0.47741,
+    "rougeL": 0.35195,
+    "fre": 63.771415121125884,
+    "compression_ratio": 0.109726669721998
   },
   {
     "template": "pattern_based.txt",
-    "mutation": "stepwise_prompt+audience_information+synonym_replacement",
-    "rouge1": 0.391275,
-    "rougeL": 0.2346,
-    "fre": 59.03921239177492,
-    "compression_ratio": 0.12679699189720867
+    "mutation": "audience_information + stepwise_prompt + synonym_replacement",
+    "rouge1": 0.47741,
+    "rougeL": 0.35195,
+    "fre": 63.771415121125884,
+    "compression_ratio": 0.109726669721998
   },
   {
     "template": "pattern_based.txt",
-    "mutation": "audience_information+stepwise_prompt+synonym_replacement",
-    "rouge1": 0.387325,
-    "rougeL": 0.2336,
-    "fre": 59.301380952380974,
-    "compression_ratio": 0.12137475212123593
+    "mutation": "audience_information + style_instruction + none",
+    "rouge1": 0.47741,
+    "rougeL": 0.35195,
+    "fre": 63.771415121125884,
+    "compression_ratio": 0.109726669721998
   },
   {
     "template": "pattern_based.txt",
-    "mutation": "audience_information+synonym_replacement+prompt_rewriting",
-    "rouge1": 0.381375,
-    "rougeL": 0.276675,
-    "fre": 62.7562254901961,
-    "compression_ratio": 0.12236652910815904
+    "mutation": "audience_information + style_instruction + prompt_rewriting",
+    "rouge1": 0.47741,
+    "rougeL": 0.35195,
+    "fre": 63.771415121125884,
+    "compression_ratio": 0.109726669721998
   },
   {
     "template": "pattern_based.txt",
-    "mutation": "audience_information+style_instruction+prompt_rewriting",
-    "rouge1": 0.3798,
-    "rougeL": 0.2821,
-    "fre": 64.48130020556611,
-    "compression_ratio": 0.11516191815716077
+    "mutation": "audience_information + style_instruction + stepwise_prompt",
+    "rouge1": 0.47741,
+    "rougeL": 0.35195,
+    "fre": 63.771415121125884,
+    "compression_ratio": 0.109726669721998
   },
   {
     "template": "pattern_based.txt",
-    "mutation": "audience_information+stepwise_prompt+prompt_rewriting",
-    "rouge1": 0.3532,
-    "rougeL": 0.21457500000000002,
-    "fre": 64.81982843137257,
-    "compression_ratio": 0.1263290651312081
-  },
-  {
-    "template": "pattern_based.txt",
-    "mutation": "audience_information+style_instruction+synonym_replacement",
-    "rouge1": 0.34797500000000003,
-    "rougeL": 0.20884999999999998,
-    "fre": 64.30871212121214,
-    "compression_ratio": 0.10827351883493419
-  },
-  {
-    "template": "pattern_based.txt",
-    "mutation": "stepwise_prompt+audience_information+prompt_rewriting",
-    "rouge1": 0.341875,
-    "rougeL": 0.20902500000000002,
-    "fre": 64.81620098039218,
-    "compression_ratio": 0.12416768184590861
-  },
-  {
-    "template": "pattern_based.txt",
-    "mutation": "audience_information+synonym_replacement+style_instruction",
-    "rouge1": 0.288325,
-    "rougeL": 0.175775,
-    "fre": 60.03471428571431,
-    "compression_ratio": 0.11431681319529564
+    "mutation": "audience_information + style_instruction + synonym_replacement",
+    "rouge1": 0.47741,
+    "rougeL": 0.35195,
+    "fre": 63.771415121125884,
+    "compression_ratio": 0.109726669721998
   }
 ]

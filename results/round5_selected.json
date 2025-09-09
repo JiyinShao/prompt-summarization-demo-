@@ -9,14 +9,14 @@
   },
   {
     "template": "pattern_based.txt",
-    "mutation": "audience_information + prompt_rewriting"
+    "mutation": "audience_information + prompt_rewriting + none"
   },
   {
     "template": "pattern_based.txt",
-    "mutation": "audience_information + stepwise_prompt"
+    "mutation": "audience_information + prompt_rewriting + stepwise_prompt + none"
   },
   {
     "template": "pattern_based.txt",
-    "mutation": "audience_information + style_instruction"
+    "mutation": "audience_information + prompt_rewriting + stepwise_prompt + style_instruction + none"
   }
 ]

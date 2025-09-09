@@ -1,21 +1,26 @@
 round_num,template,mutation,mutation_alias
 0,pattern_based.txt,audience_information,AI
-0,pattern_based.txt,audience_information+none,AI+NONE
-0,pattern_based.txt,audience_information+none,AI+NONE
-0,pattern_based.txt,audience_information+none,AI+NONE
-0,pattern_based.txt,audience_information+style_instruction,AI+SI
-0,pattern_based.txt,audience_information+style_instruction+stepwise_prompt,AI+SI+SP
-0,pattern_based.txt,audience_information+style_instruction+stepwise_prompt+none,AI+SI+SP+NONE
-0,pattern_based.txt,audience_information+stepwise_prompt,AI+SP
-0,pattern_based.txt,audience_information+stepwise_prompt+none,AI+SP+NONE
-0,pattern_based.txt,audience_information+stepwise_prompt+none,AI+SP+NONE
-0,pattern_based.txt,audience_information+stepwise_prompt+style_instruction,AI+SP+SI
-0,pattern_based.txt,audience_information+stepwise_prompt+style_instruction+none,AI+SP+SI+NONE
-0,pattern_based.txt,audience_information+synonym_replacement,AI+SR
-0,pattern_based.txt,audience_information+synonym_replacement+none,AI+SR+NONE
-0,pattern_based.txt,audience_information+synonym_replacement+none,AI+SR+NONE
+0,pattern_based.txt,audience_information + none,AI+NONE
+0,pattern_based.txt,audience_information + none,AI+NONE
+0,pattern_based.txt,audience_information + none,AI+NONE
+0,pattern_based.txt,audience_information + none,AI+NONE
+0,pattern_based.txt,audience_information + prompt_rewriting,AI+PR
+0,pattern_based.txt,audience_information + prompt_rewriting + none,AI+PR+NONE
+0,pattern_based.txt,audience_information + prompt_rewriting + none,AI+PR+NONE
+0,pattern_based.txt,audience_information + prompt_rewriting + none,AI+PR+NONE
+0,pattern_based.txt,audience_information + prompt_rewriting + style_instruction,AI+PR+SI
+0,pattern_based.txt,audience_information + prompt_rewriting + stepwise_prompt,AI+PR+SP
+0,pattern_based.txt,audience_information + prompt_rewriting + stepwise_prompt + none,AI+PR+SP+NONE
+0,pattern_based.txt,audience_information + prompt_rewriting + stepwise_prompt + none,AI+PR+SP+NONE
+0,pattern_based.txt,audience_information + prompt_rewriting + stepwise_prompt + style_instruction,AI+PR+SP+SI
+0,pattern_based.txt,audience_information + prompt_rewriting + stepwise_prompt + style_instruction + none,AI+PR+SP+SI+NONE
+0,pattern_based.txt,audience_information + style_instruction,AI+SI
+0,pattern_based.txt,audience_information + stepwise_prompt,AI+SP
 0,pattern_based.txt,none,NONE
-0,pattern_based.txt,style_instruction,SI
 0,pattern_based.txt,stepwise_prompt,SP
-0,pattern_based.txt,stepwise_prompt+audience_information,SP+AI
-0,zero_shot.txt,stepwise_prompt,SP
+0,pattern_based.txt,synonym_replacement,SR
+0,target_audience.txt,none,NONE
+0,target_audience.txt,none,NONE
+0,target_audience.txt,none,NONE
+0,target_audience.txt,none,NONE
+0,target_audience.txt,none,NONE

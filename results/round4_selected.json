@@ -1,22 +1,22 @@
 [
   {
-    "template": "pattern_based.txt",
-    "mutation": "audience_information+synonym_replacement+none"
+    "template": "target_audience.txt",
+    "mutation": "none"
   },
   {
     "template": "pattern_based.txt",
-    "mutation": "audience_information+stepwise_prompt+none"
+    "mutation": "audience_information + none"
   },
   {
     "template": "pattern_based.txt",
-    "mutation": "audience_information+style_instruction+stepwise_prompt+none"
+    "mutation": "audience_information + prompt_rewriting + none"
   },
   {
     "template": "pattern_based.txt",
-    "mutation": "audience_information+stepwise_prompt+style_instruction+none"
+    "mutation": "audience_information + prompt_rewriting + stepwise_prompt + none"
   },
   {
     "template": "pattern_based.txt",
-    "mutation": "audience_information+none"
+    "mutation": "audience_information + prompt_rewriting + stepwise_prompt + style_instruction"
   }
 ]

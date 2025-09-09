@@ -21,7 +21,7 @@ def save_json(obj, path):
         json.dump(obj, f, indent=2, ensure_ascii=False)
 
 def parse_chain(chain: str):
-    return [] if not chain else chain.split("+")
+    return [] if not chain else chain.split(" + ")
 
 def ends_with_none(chain: str) -> bool:
     parts = parse_chain(chain)
