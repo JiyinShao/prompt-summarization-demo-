@@ -34,14 +34,14 @@ def expand_6(template: str, chain: str):
     used = set(parse_chain(chain))
     out = []
 
-    out.append((template, (chain + "+none") if chain else "none"))
+    out.append((template, (chain + " + none") if chain else "none"))
 
     for m in MUTATION_POOL:
         if m == "none":
             continue
         if m in used:
             continue
-        new_m = (chain + "+" + m) if chain else m
+        new_m = (chain + " + " + m) if chain else m
         out.append((template, new_m))
     return out
 

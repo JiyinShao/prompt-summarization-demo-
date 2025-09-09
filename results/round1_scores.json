@@ -1,0 +1,242 @@
+[
+  {
+    "template": "pattern_based.txt",
+    "mutation": "audience_information",
+    "rouge1": 0.499525,
+    "rougeL": 0.3425,
+    "fre": 60.94941666666668,
+    "compression_ratio": 0.12511046355070476
+  },
+  {
+    "template": "pattern_based.txt",
+    "mutation": "none",
+    "rouge1": 0.49129999999999996,
+    "rougeL": 0.330425,
+    "fre": 61.13078571428573,
+    "compression_ratio": 0.1285793630722342
+  },
+  {
+    "template": "pattern_based.txt",
+    "mutation": "style_instruction",
+    "rouge1": 0.4837,
+    "rougeL": 0.305775,
+    "fre": 61.13864285714288,
+    "compression_ratio": 0.11308944952758793
+  },
+  {
+    "template": "pattern_based.txt",
+    "mutation": "stepwise_prompt",
+    "rouge1": 0.48260000000000003,
+    "rougeL": 0.30922499999999997,
+    "fre": 61.28204531490017,
+    "compression_ratio": 0.1105774878051011
+  },
+  {
+    "template": "zero_shot.txt",
+    "mutation": "stepwise_prompt",
+    "rouge1": 0.461375,
+    "rougeL": 0.282175,
+    "fre": 64.90006657268172,
+    "compression_ratio": 0.1322914458508024
+  },
+  {
+    "template": "target_audience.txt",
+    "mutation": "synonym_replacement",
+    "rouge1": 0.459775,
+    "rougeL": 0.31785,
+    "fre": 65.36322645333796,
+    "compression_ratio": 0.11728676048833628
+  },
+  {
+    "template": "target_audience.txt",
+    "mutation": "stepwise_prompt",
+    "rouge1": 0.4427,
+    "rougeL": 0.275625,
+    "fre": 67.12125581989554,
+    "compression_ratio": 0.1295290836133976
+  },
+  {
+    "template": "instruction_based.txt",
+    "mutation": "audience_information",
+    "rouge1": 0.44225000000000003,
+    "rougeL": 0.2778,
+    "fre": 61.050643990734144,
+    "compression_ratio": 0.13401382693695224
+  },
+  {
+    "template": "instruction_based.txt",
+    "mutation": "none",
+    "rouge1": 0.44225000000000003,
+    "rougeL": 0.2778,
+    "fre": 61.050643990734144,
+    "compression_ratio": 0.13401382693695224
+  },
+  {
+    "template": "instruction_based.txt",
+    "mutation": "prompt_rewriting",
+    "rouge1": 0.44225000000000003,
+    "rougeL": 0.2778,
+    "fre": 61.050643990734144,
+    "compression_ratio": 0.13401382693695224
+  },
+  {
+    "template": "instruction_based.txt",
+    "mutation": "stepwise_prompt",
+    "rouge1": 0.44225000000000003,
+    "rougeL": 0.2778,
+    "fre": 61.050643990734144,
+    "compression_ratio": 0.13401382693695224
+  },
+  {
+    "template": "instruction_based.txt",
+    "mutation": "style_instruction",
+    "rouge1": 0.44225000000000003,
+    "rougeL": 0.2778,
+    "fre": 61.050643990734144,
+    "compression_ratio": 0.13401382693695224
+  },
+  {
+    "template": "instruction_based.txt",
+    "mutation": "synonym_replacement",
+    "rouge1": 0.44225000000000003,
+    "rougeL": 0.2778,
+    "fre": 61.050643990734144,
+    "compression_ratio": 0.13401382693695224
+  },
+  {
+    "template": "zero_shot.txt",
+    "mutation": "audience_information",
+    "rouge1": 0.439625,
+    "rougeL": 0.27444999999999997,
+    "fre": 66.09671130952383,
+    "compression_ratio": 0.12856814427751403
+  },
+  {
+    "template": "target_audience.txt",
+    "mutation": "prompt_rewriting",
+    "rouge1": 0.42925,
+    "rougeL": 0.25305,
+    "fre": 63.8023392857143,
+    "compression_ratio": 0.12825559808726075
+  },
+  {
+    "template": "target_audience.txt",
+    "mutation": "style_instruction",
+    "rouge1": 0.4004,
+    "rougeL": 0.22260000000000002,
+    "fre": 62.36385154061627,
+    "compression_ratio": 0.12845252858947465
+  },
+  {
+    "template": "pattern_based.txt",
+    "mutation": "synonym_replacement",
+    "rouge1": 0.38470000000000004,
+    "rougeL": 0.2651,
+    "fre": 61.14888095238097,
+    "compression_ratio": 0.10829786616783021
+  },
+  {
+    "template": "few_shot.txt",
+    "mutation": "style_instruction",
+    "rouge1": 0.383325,
+    "rougeL": 0.288,
+    "fre": 62.66166666666669,
+    "compression_ratio": 0.10880720153419907
+  },
+  {
+    "template": "zero_shot.txt",
+    "mutation": "none",
+    "rouge1": 0.3814,
+    "rougeL": 0.24559999999999998,
+    "fre": 61.29702542630136,
+    "compression_ratio": 0.13045995790905623
+  },
+  {
+    "template": "zero_shot.txt",
+    "mutation": "prompt_rewriting",
+    "rouge1": 0.38065000000000004,
+    "rougeL": 0.24509999999999998,
+    "fre": 56.18311951754388,
+    "compression_ratio": 0.13713598155770548
+  },
+  {
+    "template": "target_audience.txt",
+    "mutation": "audience_information",
+    "rouge1": 0.37945,
+    "rougeL": 0.2197,
+    "fre": 62.14460474574447,
+    "compression_ratio": 0.13443338983349093
+  },
+  {
+    "template": "target_audience.txt",
+    "mutation": "none",
+    "rouge1": 0.37945,
+    "rougeL": 0.2197,
+    "fre": 62.14460474574447,
+    "compression_ratio": 0.13443338983349093
+  },
+  {
+    "template": "few_shot.txt",
+    "mutation": "stepwise_prompt",
+    "rouge1": 0.37105,
+    "rougeL": 0.277525,
+    "fre": 58.655625000000015,
+    "compression_ratio": 0.12285619288864567
+  },
+  {
+    "template": "pattern_based.txt",
+    "mutation": "prompt_rewriting",
+    "rouge1": 0.37,
+    "rougeL": 0.2558,
+    "fre": 62.717685574229705,
+    "compression_ratio": 0.11155961268166165
+  },
+  {
+    "template": "zero_shot.txt",
+    "mutation": "style_instruction",
+    "rouge1": 0.36324999999999996,
+    "rougeL": 0.240375,
+    "fre": 65.35159226190478,
+    "compression_ratio": 0.12557771365550588
+  },
+  {
+    "template": "few_shot.txt",
+    "mutation": "none",
+    "rouge1": 0.349375,
+    "rougeL": 0.27835,
+    "fre": 56.063764367816106,
+    "compression_ratio": 0.12465734562639524
+  },
+  {
+    "template": "few_shot.txt",
+    "mutation": "audience_information",
+    "rouge1": 0.34795,
+    "rougeL": 0.266875,
+    "fre": 55.24975543478263,
+    "compression_ratio": 0.10556512660624984
+  },
+  {
+    "template": "few_shot.txt",
+    "mutation": "prompt_rewriting",
+    "rouge1": 0.3366,
+    "rougeL": 0.264825,
+    "fre": 64.22833333333335,
+    "compression_ratio": 0.11060835427194862
+  },
+  {
+    "template": "few_shot.txt",
+    "mutation": "synonym_replacement",
+    "rouge1": 0.30557500000000004,
+    "rougeL": 0.24145,
+    "fre": 48.29216666666669,
+    "compression_ratio": 0.11709250412784707
+  },
+  {
+    "template": "zero_shot.txt",
+    "mutation": "synonym_replacement",
+    "rouge1": 0.2696,
+    "rougeL": 0.190075,
+    "fre": 61.128608239348395,
+    "compression_ratio": 0.11348257418047797
+  }
+]
