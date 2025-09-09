@@ -1,0 +1,74 @@
+[
+  {
+    "template": "pattern_based.txt",
+    "mutation": "audience_information+synonym_replacement+none",
+    "rouge1": 0.5094,
+    "rougeL": 0.34415,
+    "fre": 62.720888440860236,
+    "compression_ratio": 0.11394331657665745
+  },
+  {
+    "template": "pattern_based.txt",
+    "mutation": "audience_information+stepwise_prompt+none",
+    "rouge1": 0.50375,
+    "rougeL": 0.346075,
+    "fre": 62.41566666666669,
+    "compression_ratio": 0.11142170274380805
+  },
+  {
+    "template": "pattern_based.txt",
+    "mutation": "audience_information+style_instruction+stepwise_prompt+none",
+    "rouge1": 0.50375,
+    "rougeL": 0.346075,
+    "fre": 62.41566666666669,
+    "compression_ratio": 0.11142170274380805
+  },
+  {
+    "template": "pattern_based.txt",
+    "mutation": "audience_information+stepwise_prompt+style_instruction+none",
+    "rouge1": 0.501725,
+    "rougeL": 0.34415,
+    "fre": 62.720888440860236,
+    "compression_ratio": 0.11322285548155761
+  },
+  {
+    "template": "pattern_based.txt",
+    "mutation": "audience_information+none",
+    "rouge1": 0.499525,
+    "rougeL": 0.3425,
+    "fre": 60.94941666666668,
+    "compression_ratio": 0.12511046355070476
+  },
+  {
+    "template": "pattern_based.txt",
+    "mutation": "audience_information+style_instruction+stepwise_prompt+synonym_replacement",
+    "rouge1": 0.3944,
+    "rougeL": 0.2367,
+    "fre": 61.98515591397851,
+    "compression_ratio": 0.12042746643255588
+  },
+  {
+    "template": "pattern_based.txt",
+    "mutation": "audience_information+stepwise_prompt+style_instruction+synonym_replacement",
+    "rouge1": 0.37927500000000003,
+    "rougeL": 0.2294,
+    "fre": 60.88316666666669,
+    "compression_ratio": 0.11754562205215657
+  },
+  {
+    "template": "pattern_based.txt",
+    "mutation": "audience_information+stepwise_prompt+style_instruction+prompt_rewriting",
+    "rouge1": 0.35465,
+    "rougeL": 0.21537499999999998,
+    "fre": 65.12262605042018,
+    "compression_ratio": 0.1263290651312081
+  },
+  {
+    "template": "pattern_based.txt",
+    "mutation": "audience_information+style_instruction+stepwise_prompt+prompt_rewriting",
+    "rouge1": 0.35465,
+    "rougeL": 0.21537499999999998,
+    "fre": 65.12262605042018,
+    "compression_ratio": 0.1263290651312081
+  }
+]

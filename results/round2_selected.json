@@ -1,0 +1,22 @@
+[
+  {
+    "template": "pattern_based.txt",
+    "mutation": "audience_information+synonym_replacement"
+  },
+  {
+    "template": "pattern_based.txt",
+    "mutation": "audience_information+stepwise_prompt"
+  },
+  {
+    "template": "pattern_based.txt",
+    "mutation": "audience_information+none"
+  },
+  {
+    "template": "pattern_based.txt",
+    "mutation": "audience_information+style_instruction"
+  },
+  {
+    "template": "pattern_based.txt",
+    "mutation": "stepwise_prompt+audience_information"
+  }
+]

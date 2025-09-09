@@ -1,0 +1,22 @@
+[
+  {
+    "template": "pattern_based.txt",
+    "mutation": "audience_information"
+  },
+  {
+    "template": "pattern_based.txt",
+    "mutation": "none"
+  },
+  {
+    "template": "pattern_based.txt",
+    "mutation": "style_instruction"
+  },
+  {
+    "template": "pattern_based.txt",
+    "mutation": "stepwise_prompt"
+  },
+  {
+    "template": "zero_shot.txt",
+    "mutation": "stepwise_prompt"
+  }
+]
