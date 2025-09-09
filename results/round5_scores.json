@@ -33,7 +33,7 @@
   },
   {
     "template": "pattern_based.txt",
-    "mutation": "audience_information + prompt_rewriting + stepwise_prompt + style_instruction",
+    "mutation": "audience_information + prompt_rewriting + stepwise_prompt + style_instruction + none",
     "rouge1": 0.47741,
     "rougeL": 0.35195,
     "fre": 63.771415121125884,
@@ -41,31 +41,7 @@
   },
   {
     "template": "pattern_based.txt",
-    "mutation": "audience_information + prompt_rewriting + stepwise_prompt + synonym_replacement",
-    "rouge1": 0.47741,
-    "rougeL": 0.35195,
-    "fre": 63.771415121125884,
-    "compression_ratio": 0.109726669721998
-  },
-  {
-    "template": "pattern_based.txt",
-    "mutation": "audience_information + prompt_rewriting + style_instruction + none",
-    "rouge1": 0.47741,
-    "rougeL": 0.35195,
-    "fre": 63.771415121125884,
-    "compression_ratio": 0.109726669721998
-  },
-  {
-    "template": "pattern_based.txt",
-    "mutation": "audience_information + prompt_rewriting + style_instruction + stepwise_prompt",
-    "rouge1": 0.47741,
-    "rougeL": 0.35195,
-    "fre": 63.771415121125884,
-    "compression_ratio": 0.109726669721998
-  },
-  {
-    "template": "pattern_based.txt",
-    "mutation": "audience_information + prompt_rewriting + style_instruction + synonym_replacement",
+    "mutation": "audience_information + prompt_rewriting + stepwise_prompt + style_instruction + synonym_replacement",
     "rouge1": 0.47741,
     "rougeL": 0.35195,
     "fre": 63.771415121125884,

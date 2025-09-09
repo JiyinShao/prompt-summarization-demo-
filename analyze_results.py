@@ -6,7 +6,6 @@ import matplotlib.pyplot as plt
 RESULT_DIR = "results"
 os.makedirs(RESULT_DIR, exist_ok=True)
 
-# alias to simplify legends
 ALIAS = {
     "synonym_replacement": "SR",
     "prompt_rewriting": "PR",
@@ -16,7 +15,7 @@ ALIAS = {
     "none": "NONE",
 }
 BASE_ORDER = ["SR", "PR", "SI", "AI", "SP"]
-MAX_MUTS_PER_FIG = 12  # show top-N mutation chains per round to reduce clutter
+MAX_MUTS_PER_FIG = 12 
 
 def round_num_from_name(path: str) -> int:
     m = re.search(r"round(\d+)\.json$", os.path.basename(path))
@@ -38,7 +37,6 @@ def load_round_scores(round_json: str) -> pd.DataFrame:
             if isinstance(data, dict):
                 data = [data]
         df = pd.DataFrame(data)
-        # Ensure required columns
         need_cols = {"template", "mutation", "rouge1", "rougeL", "fre"}
         for c in need_cols:
             if c not in df.columns:
@@ -146,7 +144,6 @@ for sf in selected_files:
 if sel_records:
     sdf = pd.DataFrame(sel_records)
 
-    # template frequency
     if "template" not in sdf.columns:
         raise SystemExit("round*_selected.json must contain 'template'.")
 

@@ -1,7 +1,7 @@
 [
   {
-    "template": "pattern_based.txt",
-    "mutation": "audience_information"
+    "template": "target_audience.txt",
+    "mutation": "none"
   },
   {
     "template": "pattern_based.txt",
@@ -9,14 +9,14 @@
   },
   {
     "template": "pattern_based.txt",
-    "mutation": "style_instruction"
+    "mutation": "synonym_replacement"
   },
   {
     "template": "pattern_based.txt",
     "mutation": "stepwise_prompt"
   },
   {
-    "template": "zero_shot.txt",
-    "mutation": "stepwise_prompt"
+    "template": "pattern_based.txt",
+    "mutation": "audience_information"
   }
 ]

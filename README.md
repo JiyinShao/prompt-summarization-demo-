@@ -14,6 +14,7 @@ prompt-summarization-demo-/ <br>
 ├── analyze_results.py       # Aggregation & visualization (CSV + charts)<br>
 ├── mutations.py             # Mutation strategies for prompts (lexical, structural, style, audience, stepwise)<br>
 ├── config.py                # Define the Threshold of score and MAX rounds<br>
+├── sample_extraction.py     # Extract samples from the database<br>
 │<br>
 ├── prompts/<br>
 │   ├── zero_shot.txt<br>
@@ -37,7 +38,7 @@ prompt-summarization-demo-/ <br>
 - **Automatic evaluation**
   - **ROUGE-1**, **ROUGE-L**, **Flesch Reading Ease (FRE)**
 - **Batch execution**
-  - First Round: 2 datasets 2 articles × 5 prompts x 6 mutations = 120 evaluations
+  - First Round: 2 datasets x 5 articles × 5 prompts x 6 mutations = 300 evaluations
 - **Mutation strategies**
   - None
   - Synonym replacement
@@ -52,12 +53,9 @@ prompt-summarization-demo-/ <br>
 The results/ folder contains three types of output:
 
 ## 1. Raw per-sample results (JSON)
-Store individual evaluation results for each dataset and each round. Store the selected combination in each round. 
+Store individual evaluation results for each round. Store the selected combination in each round. 
 
-## 2. Aggregated tables (CSV)
-Used for further statistical analysis or visualization.
-
-## 3. Visualizations (PNG)
+## 2. Visualizations (PNG)
 Allow direct comparison of prompting strategies and mutation effects.
 
 ### Setup
