@@ -20,7 +20,7 @@ ACTIVE_MUTATIONS = [
     "stepwise_prompt",
 ]
 
-MAX_ROUNDS = 3
+MAX_ROUNDS = 5
 TOP_K = 5
 THRESHOLDS = {"rouge1": 0.80, "fre": 80.0}
 
