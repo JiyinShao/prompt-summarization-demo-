@@ -1,133 +1,41 @@
-from prompt_generator import generate_prompt
-from llm_interface import query_llm
-from evaluator import evaluate_fre, evaluate_rouge
-from datasets import load_dataset
-from mutations import MUTATIONS
-from config import (
-    DATASETS,
-    PROMPT_TEMPLATES,
-    SAMPLES_PER_DATASET,
-    SEED,
-    RESULT_DIR,
-)
-import json, os, time, random
+from data_utils import load_datasets
+from evolution import run_evolution
 
-random.seed(SEED)
-os.makedirs(RESULT_DIR, exist_ok=True)
+INITIAL_PROMPTS = [
+    {
+        "name": "zero_shot",
+        "text": "Can you give me a short summary of this article?"
+    },
+    {
+        "name": "few_shot",
+        "text": """Here are some examples of articles and their summaries:
 
-def load_samples(name: str, k: int):
-    if name == "cnn":
-        ds = load_dataset("cnn_dailymail", "3.0.0", split="test")
-        items = random.sample(list(ds), min(k, len(ds)))
-        return [
-            {"id": f"{name}_{i+1:03}", "article": s["article"], "reference": s["highlights"]}
-            for i, s in enumerate(items)
-        ]
-    elif name == "xsum":
-        try:
-            ds = load_dataset("EdinburghNLP/xsum", split="test", revision="refs/convert/parquet")
-        except Exception:
-            ds = load_dataset("EdinburghNLP/xsum", split="test", trust_remote_code=True)
-        items = random.sample(list(ds), min(k, len(ds)))
-        return [
-            {"id": f"{name}_{i+1:03}", "article": s["document"], "reference": s["summary"]}
-            for i, s in enumerate(items)
-        ]
-    else:
-        raise ValueError(f"Unsupported dataset: {name}")
+        Example 1:
+        Article: A storm hit northern France yesterday, damaging homes and cutting power.
+        Summary: A storm in northern France caused damage and power outages.
 
-def all_candidates(active_mutations: list[str]):
-    return [(t, m) for t in PROMPT_TEMPLATES for m in active_mutations]
+        Example 2:
+        Article: A new study shows coffee may help reduce the risk of heart disease.
+        Summary: Researchers found coffee drinkers had lower heart disease risk.
 
-def apply_mutation_chain(m_spec: str, prompt: str) -> str:
-    names = m_spec.split("+") if m_spec else ["none"]
-    out = prompt
-    for name in names:
-        fn = MUTATIONS.get(name, lambda x: x)
-        out = fn(out)
-    return out
+        Now here is a new article. Please write its summary:"""
+    },
+    {
+        "name": "instruction_based",
+        "text": "Please explain the main points of this article briefly in three sentences: "
+    },
+    {
+        "name": "pattern_based",
+        "text": "Can you list the three most important facts from this article as bullet points?"
+    },
+    {
+        "name": "target_audience",
+        "text": "Can you rewrite this article so that it’s easy to understand for everyday readers?"
+    }
+]
 
-def run_dataset(
-    dataset_name: str,
-    k: int,
-    candidates: list[tuple[str, str]] | None = None,
-    active_mutations: list[str] | None = None,
-    samples: list[dict] | None = None,  
-):
-    if samples is None:
-        samples = load_samples(dataset_name, k)
-    else:
-        samples = list(samples)
-
-    pairs = candidates if candidates is not None else all_candidates(active_mutations or list(MUTATIONS.keys()))
-    results = []
-    t0 = time.time()
-    total = len(samples) * len(pairs)
-    step = 0
-
-    for template_name, m_name in pairs:
-        for sample in samples:
-            step += 1
-            try:
-                base_prompt = generate_prompt(sample["article"], template_file=template_name)
-                mutated_prompt = apply_mutation_chain(m_name, base_prompt)
-                output = query_llm(mutated_prompt).lstrip(": ").strip()
-
-                fre = evaluate_fre(output)
-                rouge = evaluate_rouge(output, sample["reference"])
-                comp_ratio = (len(output) + 1e-9) / (len(sample["article"]) + 1e-9)
-
-                results.append({
-                    "id": sample["id"],
-                    "dataset": dataset_name,
-                    "template": template_name,
-                    "mutation": m_name,
-                    "prompt": mutated_prompt,
-                    "output": output,
-                    "fre": fre,
-                    "rouge1": rouge.get("rouge1"),
-                    "rougeL": rouge.get("rougeL"),
-                    "compression_ratio": comp_ratio,
-                    "seed": SEED,
-                })
-            except Exception as e:
-                results.append({
-                    "id": sample["id"],
-                    "dataset": dataset_name,
-                    "template": template_name,
-                    "mutation": m_name,
-                    "error": str(e),
-                    "seed": SEED,
-                })
-
-            if step % 10 == 0 or step == total:
-                print(f"[{dataset_name}] {step}/{total} | elapsed: {time.time() - t0:.1f}s")
-
-    out_path = os.path.join(RESULT_DIR, f"{dataset_name}_prompt_eval_{len(samples)}.json")
-    with open(out_path, "w", encoding="utf-8") as f:
-        json.dump(results, f, indent=2)
-    print(f"[saved] {out_path}")
-    return results
-
-def run_once(
-    datasets: list[str] = DATASETS,
-    samples_per_dataset: int = SAMPLES_PER_DATASET,
-    candidates: list[tuple[str, str]] | None = None,
-    active_mutations: list[str] | None = None,
-    samples_map: dict[str, list[dict]] | None = None, 
-):
-    all_results = []
-    for ds in datasets:
-        fixed_samples = None if samples_map is None else samples_map.get(ds)
-        res = run_dataset(
-            ds,
-            samples_per_dataset,
-            candidates=candidates,
-            active_mutations=active_mutations,
-            samples=fixed_samples, 
-        )
-        all_results.extend(res)
-    return all_results
+DATASETS = ["cnn_dailymail", "EdinburghNLP/xsum"]
 
 if __name__ == "__main__":
-    run_once()
+    datasets = load_datasets(DATASETS, n_samples=2)
+    run_evolution(datasets, INITIAL_PROMPTS, max_rounds=5, top_k=5)

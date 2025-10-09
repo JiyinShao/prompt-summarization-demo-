@@ -1,8 +1,9 @@
-transformers
-torch
-sentencepiece
-textstat
-rouge-score
 datasets
-pandas
+evaluate
+absl-py
+rouge-score
+textstat
+numpy
+scikit-learn
 matplotlib
+seaborn

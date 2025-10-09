@@ -1,7 +1,7 @@
 import os, json, random
 from datasets import load_dataset
 
-OUT_DIR = "results"
+OUT_DIR = "data"
 os.makedirs(OUT_DIR, exist_ok=True)
 
 def sample_and_save(dataset_name, split, k, out_path, article_key, summary_key):
@@ -26,7 +26,7 @@ def main():
     sample_and_save(
         dataset_name="cnn_dailymail",
         split="test",
-        k=5,
+        k=20,
         out_path=os.path.join(OUT_DIR, "cnn_input.json"),
         article_key="article",
         summary_key="highlights"
@@ -35,7 +35,7 @@ def main():
     sample_and_save(
         dataset_name="EdinburghNLP/xsum",
         split="test",
-        k=5,
+        k=20,
         out_path=os.path.join(OUT_DIR, "xsum_input.json"),
         article_key="document",
         summary_key="summary"

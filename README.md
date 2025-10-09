@@ -1,62 +1,67 @@
-# Prompt Summarization Demo
+# Prompt Summarization Evolution
 
-This repository is part of my **Research Project 7100A** at the **University of Adelaide**. It explores how different **prompt engineering strategies** influence the quality of text summarization using **large language models (LLMs)** such as T5.
+This repository is part of my **Research Project 7100A** at the **University of Adelaide**.  
+It investigates how different **prompt engineering strategies** and **mutation-based optimization methods** influence the quality of text summarization using **T5-based large language models (LLMs)**.
 
-## Project Structure
+## 📁 Project Structure
 
-prompt-summarization-demo-/ <br>
+prompt-summarization/<br>
 │<br>
-├── main.py                  # Run the first loop of optimizer<br>
-├── evolution.py             # Select the TOP 5 results and continue generation<br>
-├── prompt_generator.py      # Builds prompts from template files<br>
-├── llm_interface.py         # T5 model wrapper (tokenize → generate → decode)<br>
-├── evaluator.py             # ROUGE-1 / ROUGE-L / Flesch Reading Ease (FRE)<br>
-├── analyze_results.py       # Aggregation & visualization (CSV + charts)<br>
-├── mutations.py             # Mutation strategies for prompts (lexical, structural, style, audience, stepwise)<br>
-├── config.py                # Define the Threshold of score and MAX rounds<br>
-├── sample_extraction.py     # Extract samples from the database<br>
+├── main.py # Entry script for evolutionary summarization<br>
+├── evolution.py # Implements prompt evolution across multiple rounds<br>
+├── mutations.py # Defines mutation strategies for prompts<br>
+├── baseline_generate.py # Runs baseline (no prompt/mutation) summarization<br>
+├── visualize_results.py # Visualization of results (bar/line charts)<br>
+├── evaluation.py # Calculates ROUGE-1, ROUGE-L, FRE, compression<br>
+├── llm_utils.py # Model wrapper (T5 query / decoding utilities)<br>
+├── data_utils.py # Helper for loading and preprocessing datasets<br>
+├── sample_extraction.py # Selects articles from CNN and XSum datasets<br>
+├── mini-demo.py # Minimal interactive demo (two prompts comparison)<br>
 │<br>
-├── prompts/<br>
-│   ├── zero_shot.txt<br>
-│   ├── few_shot.txt<br>
-│   ├── instruction_based.txt<br>
-│   ├── pattern_based.txt<br>
-│   └── target_audience.txt   # Five prompt strategies used in current experiments<br>
+├── data/<br>
+│ ├── cnn_input.json # CNN/DailyMail test samples<br>
+│ └── xsum_input.json # XSum test samples<br>
 │<br>
-├── results/                 # Evaluation outputs (see details below)<br>
+├── results/ # All experimental outputs and figures<br>
+│ ├── round_*.json # Per-round summarization results<br>
+│ ├── meet_threshold.json # Prompts meeting threshold across rounds<br>
+│ ├── baseline.json # Baseline summarization results<br>
+│ └── ... # Other visualization charts<br>
 │<br>
-├── requirements.txt         # Python dependencies<br>
+├── requirements.txt # Dependencies<br>
 └── README.md<br>
 
 ## Current Progress
+### 1. Prompting Strategies
+Five styles are compared:
+- zero_shot
+- few_shot
+- instruction_based
+- pattern_based
+- target_audience
 
-- **Five prompting strategies**
-  - zero_shot.txt, few_shot.txt, instruction_based.txt, pattern_based.txt, target_audience.txt
-- **Two datasets**
-  - CNN/DailyMail (cnn_dailymail, split: test)
-  - XSum (EdinburghNLP/xsum, split: test, parquet revision)
-- **Automatic evaluation**
-  - **ROUGE-1**, **ROUGE-L**, **Flesch Reading Ease (FRE)**
-- **Batch execution**
-  - First Round: 2 datasets x 5 articles × 5 prompts x 6 mutations = 300 evaluations
-- **Mutation strategies**
-  - None
-  - Synonym replacement
-  - Prompt rewriting
-  - Add style instruction
-  - Add audience information
-  - Stepwise prompt
-- **Result aggregation & visualization**
-  - Merged CSV + bar charts comparing templates across datasets
+### 2. Datasets
+- **CNN/DailyMail** — long-form news articles  
+- **XSUM** — short single-sentence summaries  
 
-### Results Directory
-The results/ folder contains three types of output:
+### 3. Mutation Methods
+Each prompt undergoes up to five mutation types:
+- Synonym replacement  
+- Prompt rewriting  
+- Style instruction  
+- Audience information  
+- Stepwise (multi-step) prompts  
 
-## 1. Raw per-sample results (JSON)
-Store individual evaluation results for each round. Store the selected combination in each round. 
+### 4. Evaluation Metrics
+Each generated summary is automatically evaluated using:
+- **ROUGE-1**  
+- **ROUGE-L**  
+- **Flesch Reading Ease (FRE)**  
+- **Compression ratio**
 
-## 2. Visualizations (PNG)
-Allow direct comparison of prompting strategies and mutation effects.
+### 5. Baseline vs Evolution Comparison
+- `baseline_generate.py`: Runs summarization without any prompt/mutation  
+- `visualize_results.py`: Compares baseline vs final evolved prompts (bar/line charts)
 
 ### Setup
 
@@ -66,15 +71,15 @@ Allow direct comparison of prompting strategies and mutation effects.
 2. **Install dependencies**
    pip install -r requirements.txt
 3. **Run the summarization and evaluation pipeline**
-   python main.py
+   python evolution.py
 4. **Aggregate results & generate charts**
-   python analyze_results.py
+   python visualize_results.py
 
 This will:
- - Load 2 test samples from each dataset (configurable)
+ - Load 20 test samples from each dataset
  - Apply all five prompt templates
  - Generate summaries using T5
- - Score outputs with ROUGE-1 / ROUGE-L / FRE
+ - Score outputs with ROUGE-1 / ROUGE-L / FRE / Compression Rate
  - Save results under results/
  - Export comparison charts 
 

@@ -1,3 +1,1 @@
-Please summarize the following article in two sentences using clear academic English:
-
-{text}
+Please explain the main points of this article briefly in three sentences: {text}

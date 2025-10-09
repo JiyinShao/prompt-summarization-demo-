@@ -1,0 +1,362 @@
+[
+  {
+    "dataset": "cnn",
+    "index": 0,
+    "summary": "aliesha Peterson, 22, first started exercising in august 2013; as of April 2015, she has lost nearly 20lbs and gained a six-pack .",
+    "rouge1": 0.26229508196721313,
+    "rougel": 0.19672131147540983,
+    "fre": 61.45045454545455,
+    "compression": 0.028535980148883373
+  },
+  {
+    "dataset": "cnn",
+    "index": 1,
+    "summary": "baby will spend first few weeks at parents' home, dubbed 'fortress anmer' nursery and one at Kensington palace have been given a Beatrix Potter theme . nanny Maria Teresa Turrion Borrallo is preparing to welcome a second charge .",
+    "rouge1": 0.2988505747126437,
+    "rougel": 0.20689655172413796,
+    "fre": 48.581824324324344,
+    "compression": 0.0455607476635514
+  },
+  {
+    "dataset": "cnn",
+    "index": 2,
+    "summary": "Furious 7 is now one of the ten highest grossing movies of all-time worldwide . it is predicted to overtake the likes of Frozen and Iron Man 3 in a matter of weeks .",
+    "rouge1": 0.6341463414634148,
+    "rougel": 0.5609756097560976,
+    "fre": 68.9825,
+    "compression": 0.06854838709677419
+  },
+  {
+    "dataset": "cnn",
+    "index": 3,
+    "summary": "Nurhayada Sofia was out shopping with her mother and sister . she suddenly disappeared through a gap and plunged five floors . six-year-old was killed on impact after suffering horrific head injuries .",
+    "rouge1": 0.3614457831325301,
+    "rougel": 0.24096385542168675,
+    "fre": 61.32500000000002,
+    "compression": 0.09322033898305085
+  },
+  {
+    "dataset": "cnn",
+    "index": 4,
+    "summary": "infamous shepherds pie-trifle combination immortalised on popular show 16 years ago . features sponge, jam, custard, lamb, peas, onions, whipped cream and sprinkles . but when sliced into, it did not taste as appetising as characters claimed .",
+    "rouge1": 0.35443037974683544,
+    "rougel": 0.3037974683544304,
+    "fre": 57.21619047619049,
+    "compression": 0.06109324758842444
+  },
+  {
+    "dataset": "cnn",
+    "index": 5,
+    "summary": "the president elicited groans and a thumbs down from head coach bill belichick after cracking a deflategate joke . 'that whole (deflategate) story got blown out of proportion,' he said . he also quipped that he wished 'chicago could learn something from Boston's championship-winning ways'",
+    "rouge1": 0.1081081081081081,
+    "rougel": 0.05405405405405405,
+    "fre": 60.468062015503904,
+    "compression": 0.07020280811232449
+  },
+  {
+    "dataset": "cnn",
+    "index": 6,
+    "summary": "reports emerged suggesting the Newcastle owner was now the official owner of the Light Blues trademarks . documents appeared on the government-run Intellectual Property Office (IPO) website showing the club's trademarks were now controlled by SportsDirect.com Retail Ltd . news that Ashley has seized hold of more treasured assets will worry the Ibrox faithful .",
+    "rouge1": 0.4,
+    "rougel": 0.3578947368421052,
+    "fre": 45.59000000000003,
+    "compression": 0.1558073654390935
+  },
+  {
+    "dataset": "cnn",
+    "index": 7,
+    "summary": "Adam Gadahn was known as the American mouthpiece of al Qaeda . he converted to Islam in 1995 and left the united states for Pakistan .",
+    "rouge1": 0.47222222222222227,
+    "rougel": 0.3055555555555555,
+    "fre": 64.22999999999999,
+    "compression": 0.031287605294825514
+  },
+  {
+    "dataset": "cnn",
+    "index": 8,
+    "summary": "John Barnes and Jamie Redknapp rapped 1979 classic Rapper's Delight . the pair played together at Liverpool between 1991 and 1997 . Barnes reached No 1 in the UK with 1990 world cup song World in Motion .",
+    "rouge1": 0.42696629213483145,
+    "rougel": 0.29213483146067415,
+    "fre": 81.38761904761907,
+    "compression": 0.1148036253776435
+  },
+  {
+    "dataset": "cnn",
+    "index": 9,
+    "summary": "four-time winner John Higgins impressed with a 10-5 first-round victory . the 39-year-old fired breaks of 77, 75, 69 and a clinching 106 in the second session . graeme dott, unseeded this year but a proven Crucible class act and champion in 2006, was a 10-8 winner earlier .",
+    "rouge1": 0.3191489361702128,
+    "rougel": 0.2765957446808511,
+    "fre": 69.88905797101451,
+    "compression": 0.10722100656455143
+  },
+  {
+    "dataset": "cnn",
+    "index": 10,
+    "summary": "arsenal will play in their yellow and blue away strip for the final against Aston villa . the gunners won the competition in 1950 and 1971 while wearing yellow . the kick-off time for the clash has also been confirmed as 5.30pm on Saturday .",
+    "rouge1": 0.4444444444444444,
+    "rougel": 0.2777777777777778,
+    "fre": 73.30607142857146,
+    "compression": 0.10135135135135136
+  },
+  {
+    "dataset": "cnn",
+    "index": 11,
+    "summary": "Philippe Coutinho scored the only goal of the game as Liverpool advanced to the FA Cup semi-finals . the victory sets up a wembley clash with aston villa on saturday . it has been a dramatic 24 hours for captain Jordan Henderson as his partner beccy gave birth to their second daughter, Alba .",
+    "rouge1": 0.40625000000000006,
+    "rougel": 0.34375,
+    "fre": 56.87411764705885,
+    "compression": 0.10865191146881288
+  },
+  {
+    "dataset": "cnn",
+    "index": 12,
+    "summary": "West Coast Shaving has blended 30 members of rock's most recognizable bands into one . 'we wanted to include KISS with makeup, however the result was just a white and black mess'",
+    "rouge1": 0.25396825396825395,
+    "rougel": 0.19047619047619047,
+    "fre": 68.2960483870968,
+    "compression": 0.10062893081761007
+  },
+  {
+    "dataset": "cnn",
+    "index": 13,
+    "summary": "Tayler Chaice Buzbee was forced to make an emergency appointment at an aspen dental facility in Alabama on friday morning after developing agonizing toothache . but after calling the dentist's office, she was informed that the only available appointment was in just 20 minutes - meaning that she had no time to find a babysitter . instead, employees assured her that she could bring her baby to the facility - but midway through the appointment, Attley started to create a fuss . a short while",
+    "rouge1": 0.4134078212290503,
+    "rougel": 0.2905027932960894,
+    "fre": 43.772500000000036,
+    "compression": 0.10253317249698432
+  },
+  {
+    "dataset": "cnn",
+    "index": 14,
+    "summary": "heartbroken owner Tony Tancock, 56, has won accolades for specially-bred cavies . but thief snuck into an outbuilding at his home in crediton, Devon, to steal pets . he left six which were not show quality, plus two other show ones . police investigating theft have not ruled out a rival competitor .",
+    "rouge1": 0.3619047619047619,
+    "rougel": 0.3047619047619048,
+    "fre": 63.18492346938777,
+    "compression": 0.10076045627376426
+  },
+  {
+    "dataset": "cnn",
+    "index": 15,
+    "summary": "Falkirk is not a favourite to win the Aviva Premiership this season . despite the fact that they are all away from home this weekend, they are all firm underdogs . if their pack can go toe-to-toe with Wasps, they could win the Heineken Cup .",
+    "rouge1": 0.21818181818181817,
+    "rougel": 0.1272727272727273,
+    "fre": 78.17503875968995,
+    "compression": 0.06657018813314038
+  },
+  {
+    "dataset": "cnn",
+    "index": 16,
+    "summary": "Atlanta-based writer Alex Gray, 27, weighed 354lbs at his heaviest . he had an insatiable appetite 'as an only child with unabated access to nearly everything' by the time he was in college, he found himself struggling with physical intimacy because of his size . he recalled one woman who called him out for breathing heavily during one of their sexual encounters . but the worse he felt about himself, the more he ate .",
+    "rouge1": 0.23423423423423426,
+    "rougel": 0.1981981981981982,
+    "fre": 56.55677816901414,
+    "compression": 0.12274959083469722
+  },
+  {
+    "dataset": "cnn",
+    "index": 17,
+    "summary": "Mohammed Nisar, 55, was driving sole trader Adrian Quinn to Walsall train station . passenger hopped out of vehicle in a rush, forgetting his rucksack . he had been carrying the hefty sum of money after cashing inheritance . on realising mistake he felt 'dazed' and tried to flag down another cab . realised he had left the bag on the passenger seat and returned it .",
+    "rouge1": 0.5263157894736842,
+    "rougel": 0.3157894736842105,
+    "fre": 60.52641935483874,
+    "compression": 0.10634920634920635
+  },
+  {
+    "dataset": "cnn",
+    "index": 18,
+    "summary": "True story: Doerr's novel centered on the World War II bombing of St.-Malo, France . \"Between Riverside and Crazy\" won the Pulitzer Prize for drama .",
+    "rouge1": 0.28571428571428575,
+    "rougel": 0.20408163265306123,
+    "fre": 60.70500000000001,
+    "compression": 0.08024691358024691
+  },
+  {
+    "dataset": "cnn",
+    "index": 19,
+    "summary": "Aaron Hernandez was convicted of first-degree murder in the 2013 slaying of Odin Lloyd . a jury convicted him of first-degree murder and sentenced him to life without parole . the former tight end walked into court with an air of bravado, his head held high .",
+    "rouge1": 0.18604651162790697,
+    "rougel": 0.11627906976744186,
+    "fre": 63.12560606060609,
+    "compression": 0.06080206985769728
+  },
+  {
+    "dataset": "xsum",
+    "index": 0,
+    "summary": "the singer kicked off the new series of Later... with Jools Holland . she describes live TV as \"just hellish\" and says she'd rather die . the singer says she's a \"wonderful person to be around before anything big\"",
+    "rouge1": 0.44776119402985076,
+    "rougel": 0.29850746268656714,
+    "fre": 76.26246621621624,
+    "compression": 0.025557011795543906
+  },
+  {
+    "dataset": "xsum",
+    "index": 1,
+    "summary": "Tawel Fan ward at Glan Clwyd Hospital, Denbighshire, was closed more than three years ago . report found some patients were treated like animals . family of one patient told they were told care on ward was inadequate .",
+    "rouge1": 0.2,
+    "rougel": 0.13333333333333333,
+    "fre": 74.805,
+    "compression": 0.08705357142857142
+  },
+  {
+    "dataset": "xsum",
+    "index": 2,
+    "summary": "Ulster Unionists want the election to be a referendum on how Renewable Heat Incentive was handled . the manifesto includes calls for action in tackling waiting lists, increasing PSNI numbers to 7,500 .",
+    "rouge1": 0.2456140350877193,
+    "rougel": 0.14035087719298245,
+    "fre": 41.005725806451636,
+    "compression": 0.07568807339449542
+  },
+  {
+    "dataset": "xsum",
+    "index": 3,
+    "summary": "Bones \"consistent with being human\" found during a painstaking search . the bones will now be subject to DNA testing and more intrusive forensic analysis .",
+    "rouge1": 0.22641509433962265,
+    "rougel": 0.11320754716981132,
+    "fre": 46.60500000000002,
+    "compression": 0.09811320754716982
+  },
+  {
+    "dataset": "xsum",
+    "index": 4,
+    "summary": "archbishop of Canterbury Justin Welby has called the bill \"mistaken and dangerous\" the legislation would make it legal for adults to be assisted ending their own life . it would apply to those with less than six months to live .",
+    "rouge1": 0.3714285714285714,
+    "rougel": 0.3142857142857143,
+    "fre": 59.05788461538465,
+    "compression": 0.03319838056680162
+  },
+  {
+    "dataset": "xsum",
+    "index": 5,
+    "summary": "Falkenstein: some ex-offenders are living rough for up to a year before finding accommodation . he says building more one-bedroom properties could help ease the need for housing . he says the average price is a hundred pounds a week to keep someone in a rented flat . falkenstein: \"there's a desperate need for it, finding suitable accommodation\"",
+    "rouge1": 0.29333333333333333,
+    "rougel": 0.16,
+    "fre": 59.05693181818182,
+    "compression": 0.09682804674457429
+  },
+  {
+    "dataset": "xsum",
+    "index": 6,
+    "summary": "False three firearms, ammunition and a five-figure sum of money were recovered . A 26-year-old man who was arrested and charged appeared at Edinburgh Sheriff Court on Thursday.",
+    "rouge1": 0.3829787234042553,
+    "rougel": 0.21276595744680848,
+    "fre": 52.13250000000002,
+    "compression": 0.6363636363636364
+  },
+  {
+    "dataset": "xsum",
+    "index": 7,
+    "summary": "Falafel: BT's giant pension scheme has assets of about £40bn and a deficit of about £10bn . 80% of the scheme relates to Openreach, the internet infrastructure provider that BT's rivals would like to see spun off . BT's chief executive, Gavin Patterson, said he thought he could reach a compromise with shareholders .",
+    "rouge1": 0.3023255813953488,
+    "rougel": 0.18604651162790697,
+    "fre": 56.87411764705885,
+    "compression": 0.13075060532687652
+  },
+  {
+    "dataset": "xsum",
+    "index": 8,
+    "summary": "Falklands beat Fleetwood 1-0 at st. mary's . paddy Madden scores from the spot to give the hosts the lead .",
+    "rouge1": 0.10256410256410256,
+    "rougel": 0.10256410256410256,
+    "fre": 90.32934210526317,
+    "compression": 0.1206896551724138
+  },
+  {
+    "dataset": "xsum",
+    "index": 9,
+    "summary": "Falkirk drew 1-1 with Hibs at the etihad stadium on saturday . liam Henderson opened the scoring with a superb free-kick before John McGinn increased the lead . Stevie Mallan pulled one back with a free-kick of his own before half-time .",
+    "rouge1": 0.18749999999999997,
+    "rougel": 0.15625,
+    "fre": 63.486153846153854,
+    "compression": 0.11444141689373297
+  },
+  {
+    "dataset": "xsum",
+    "index": 10,
+    "summary": "Falklands: avalanche hits military post on northern side of Siachen glacier . soldiers were on duty at an altitude of 5,900m (19,350ft) when the avalanche struck . chances of any soldiers being found alive were so slim that Prime Minister Narendra Modi even offered condolences .",
+    "rouge1": 0.2571428571428571,
+    "rougel": 0.14285714285714285,
+    "fre": 52.59829457364344,
+    "compression": 0.14067278287461774
+  },
+  {
+    "dataset": "xsum",
+    "index": 11,
+    "summary": "Falkenstein: the world's worst nuclear accident Ukraine marks Chernobyl 30th anniversary . the arch will cover the remains of the reactor which lost its roof in a catastrophic explosion in 1986 . experts fear if parts of the reactor collapse inside the sarcophagus, further radioactive material could be released .",
+    "rouge1": 0.34285714285714286,
+    "rougel": 0.17142857142857143,
+    "fre": 36.133333333333354,
+    "compression": 0.13368983957219252
+  },
+  {
+    "dataset": "xsum",
+    "index": 12,
+    "summary": "a National Marine Centre for Scotland is planned to be built at the existing Seabird centre in North Berwick . an interactive experience is planned to inspire people to care for the natural environment .",
+    "rouge1": 0.326530612244898,
+    "rougel": 0.2857142857142857,
+    "fre": 49.087500000000006,
+    "compression": 0.09138381201044386
+  },
+  {
+    "dataset": "xsum",
+    "index": 13,
+    "summary": "Turin Shroud: See it in detail Pope Francis will be among those to view it . 4.4-metre-long (14-ft) cloth is on show until 24 June .",
+    "rouge1": 0.16326530612244897,
+    "rougel": 0.12244897959183672,
+    "fre": 85.38,
+    "compression": 0.08783783783783784
+  },
+  {
+    "dataset": "xsum",
+    "index": 14,
+    "summary": "Crewe's under-21s reached the Professional Development League Two final . three under-16s have also signed first-year scholar contracts . three under-16s have also signed first-year scholar contracts .",
+    "rouge1": 0.1509433962264151,
+    "rougel": 0.1509433962264151,
+    "fre": 49.48066666666668,
+    "compression": 0.15135135135135136
+  },
+  {
+    "dataset": "xsum",
+    "index": 15,
+    "summary": "Falsity of start: .44 secs outside his best. Smyth exits from men's 100m and was disqualified . Gladys Ganiel finishes 12th in women's marathon .",
+    "rouge1": 0.2807017543859649,
+    "rougel": 0.14035087719298245,
+    "fre": 68.58135869565217,
+    "compression": 0.06426735218508997
+  },
+  {
+    "dataset": "xsum",
+    "index": 16,
+    "summary": "Exhumed remains will be analysed to unlock further details on their history . the remains are believed to date to the medieval period, but could be Roman .",
+    "rouge1": 0.0,
+    "rougel": 0.0,
+    "fre": 56.97846153846157,
+    "compression": 0.14358974358974358
+  },
+  {
+    "dataset": "xsum",
+    "index": 17,
+    "summary": "illegally shipped $32m worth of US-made equipment to Iran . also sent goods to North Korea without the correct export licences . US said it lied to authorities and its own lawyer about the violations .",
+    "rouge1": 0.34375,
+    "rougel": 0.21874999999999997,
+    "fre": 52.10636363636365,
+    "compression": 0.1016949152542373
+  },
+  {
+    "dataset": "xsum",
+    "index": 18,
+    "summary": "Burundi's presidential election is scheduled for 15 July . East African leaders have called for a further two-week delay .",
+    "rouge1": 0.11111111111111112,
+    "rougel": 0.11111111111111112,
+    "fre": 47.30000000000004,
+    "compression": 0.0851063829787234
+  },
+  {
+    "dataset": "xsum",
+    "index": 19,
+    "summary": "US marine convicted of killing transgender woman in hotel room . court downgraded conviction to homicide and ordered to pay 4.5 million pesos . case has strained ties between the US and the Philippines .",
+    "rouge1": 0.4489795918367347,
+    "rougel": 0.24489795918367344,
+    "fre": 61.24000000000001,
+    "compression": 0.12681159420289856
+  }
+]
