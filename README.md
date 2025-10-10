@@ -3,7 +3,7 @@
 This repository is part of my **Research Project 7100A** at the **University of Adelaide**.  
 It investigates how different **prompt engineering strategies** and **mutation-based optimization methods** influence the quality of text summarization using **T5-based large language models (LLMs)**.
 
-## 📁 Project Structure
+## Project Structure
 
 prompt-summarization/<br>
 │<br>
