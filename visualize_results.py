@@ -119,13 +119,27 @@ def plot_rouge_vs_compression():
     if df.empty:
         return
     plt.figure(figsize=(8,6))
-    sns.scatterplot(data=df, x="compression", y="rouge1", hue="prompt_name", style="mutation", s=80)
+    sns.scatterplot(
+        data=df,
+        x="compression",
+        y="rouge1",
+        hue="prompt_name",
+        style="mutation",
+        s=80
+    )
     plt.title("Relationship between ROUGE-1 and Compression Rate")
     plt.xlabel("Compression Rate")
     plt.ylabel("ROUGE-1 Score")
-    plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
+    plt.legend(
+        title="Prompt / Mutation",
+        loc="upper right",
+        frameon=True,
+        framealpha=0.9,
+        fontsize=8,
+        title_fontsize=9
+    )
     plt.tight_layout()
-    plt.savefig(os.path.join(RESULT_DIR, "rouge_vs_compression.png"))
+    plt.savefig(os.path.join(RESULT_DIR, "rouge_vs_compression.png"), dpi=300)
     plt.close()
 
 def plot_rouge_vs_compression_trend():
@@ -174,17 +188,17 @@ def plot_score_distributions():
     plt.savefig(save_path, dpi=300)
     plt.close()
 
-def plot_metric_relationships():
-    path = os.path.join(RESULT_DIR, "meet_threshold.json")
-    if not os.path.exists(path):
-        return
-    records = [json.loads(line) for line in open(path, "r", encoding="utf-8")]
-    df = pd.DataFrame(records)
-    if df.empty:
-        return
-    sns.pairplot(df, vars=["rouge1", "rougel", "fre", "compression"], hue="prompt_name")
-    plt.suptitle("Metric Relationships", y=1.02)
-    plt.savefig(os.path.join(RESULT_DIR, "metric_relationships.png"))
+def plot_metric_relationships(): 
+    path = os.path.join(RESULT_DIR, "meet_threshold.json") 
+    if not os.path.exists(path): 
+        return 
+    records = [json.loads(line) for line in open(path, "r", encoding="utf-8")] 
+    df = pd.DataFrame(records) 
+    if df.empty: 
+        return 
+    sns.pairplot(df, vars=["rouge1", "rougel", "fre", "compression"], hue="prompt_name") 
+    plt.suptitle("Metric Relationships", y=1.02) 
+    plt.savefig(os.path.join(RESULT_DIR, "metric_relationships.png")) 
     plt.close()
 
 def plot_prompt_radar():
