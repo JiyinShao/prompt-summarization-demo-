@@ -1,1 +1,0 @@
-Can you give me a short summary of this article? {text}

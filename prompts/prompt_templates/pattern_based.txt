@@ -1,3 +1,0 @@
-Can you list the three most important facts from this article as bullet points?
-Article:
-{text}
