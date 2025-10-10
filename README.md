@@ -16,7 +16,6 @@ prompt-summarization/<br>
 ├── llm_utils.py # Model wrapper (T5 query / decoding utilities)<br>
 ├── data_utils.py # Helper for loading and preprocessing datasets<br>
 ├── sample_extraction.py # Selects articles from CNN and XSum datasets<br>
-├── mini-demo.py # Minimal interactive demo (two prompts comparison)<br>
 │<br>
 ├── data/<br>
 │ ├── cnn_input.json # CNN/DailyMail test samples<br>
