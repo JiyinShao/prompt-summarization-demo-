@@ -16,8 +16,8 @@ def query_t5(input_text: str, max_length=128) -> str:
     )
     return tokenizer.decode(outputs[0], skip_special_tokens=True)
 
-def mutate_with_llm(base_prompt: str, style: str, n: int = 2) -> list[str]:
-    meta_prompt = f"Generate {n} new prompts based on the following prompt with the instruction: {style}\nOriginal prompt: {base_prompt}"
+def mutate_with_llm(base_prompt: str, style: str) -> list[str]:
+    meta_prompt = f"Generate new prompts based on the following prompt with the instruction: {style}\nOriginal prompt: {base_prompt}"
     new_prompt = query_t5(meta_prompt, max_length=64)
     return [new_prompt]
 

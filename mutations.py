@@ -15,4 +15,4 @@ def mutate(prompt: str, mtype: str) -> list[str]:
     if mtype == "stepwise_prompt":
         return [apply_stepwise(prompt)]
     else:
-        return mutate_with_llm(prompt, style=MUTATION_GUIDELINES[mtype], n=2)
+        return mutate_with_llm(prompt, style=MUTATION_GUIDELINES[mtype])

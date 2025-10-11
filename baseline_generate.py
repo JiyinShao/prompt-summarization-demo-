@@ -12,7 +12,7 @@ def run_baseline(datasets):
     for dataset_name, samples in datasets.items():
         print(f"\n=== Running baseline summarization for {dataset_name} ({len(samples)} articles) ===")
         for idx, (article, ref) in enumerate(samples):
-            summary = summarize_with_prompt(article, prompt_text=None)
+            summary = summarize_with_prompt(article, prompt=None)
             scores = evaluate_summary(summary, ref, article)
             record = {
                 "dataset": dataset_name,
