@@ -7,7 +7,6 @@ It investigates how different **prompt engineering strategies** and **mutation-b
 
 prompt-summarization/<br>
 │<br>
-├── main.py # Entry script for evolutionary summarization<br>
 ├── evolution.py # Implements prompt evolution across multiple rounds<br>
 ├── mutations.py # Defines mutation strategies for prompts<br>
 ├── baseline_generate.py # Runs baseline (no prompt/mutation) summarization<br>
@@ -69,13 +68,15 @@ Each generated summary is automatically evaluated using:
    cd prompt-summarization-demo-
 2. **Install dependencies**
    pip install -r requirements.txt
-3. **Run the summarization and evaluation pipeline**
+3. **Extract articles from the database**
+   python sample_extraction.py
+4. **Run the summarization and evaluation pipeline**
    python evolution.py
-4. **Aggregate results & generate charts**
+5. **Aggregate results & generate charts**
    python visualize_results.py
 
 This will:
- - Load 20 test samples from each dataset
+ - Load test samples from each dataset
  - Apply all five prompt templates
  - Generate summaries using T5
  - Score outputs with ROUGE-1 / ROUGE-L / FRE / Compression Rate

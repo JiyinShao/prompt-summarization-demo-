@@ -1,7 +1,7 @@
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 import torch
 
-MODEL_NAME = "t5-base"
+MODEL_NAME = "google/flan-t5-base"
 tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
 model = AutoModelForSeq2SeqLM.from_pretrained(MODEL_NAME)
 
