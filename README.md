@@ -7,10 +7,12 @@ It investigates how different **prompt engineering strategies** and **mutation-b
 
 prompt-summarization/<br>
 │<br>
+├── run_all.py # Automatically run all files<br>
+├── generate_prompts.py # Generate prompts<br>
 ├── evolution.py # Implements prompt evolution across multiple rounds<br>
 ├── mutations.py # Defines mutation strategies for prompts<br>
 ├── baseline_generate.py # Runs baseline (no prompt/mutation) summarization<br>
-├── visualize_results.py # Visualization of results (bar/line charts)<br>
+├── visualize_results.py # Visualization of results<br>
 ├── evaluation.py # Calculates ROUGE-1, ROUGE-L, FRE, compression<br>
 ├── llm_utils.py # Model wrapper (T5 query / decoding utilities)<br>
 ├── data_utils.py # Helper for loading and preprocessing datasets<br>
@@ -18,13 +20,15 @@ prompt-summarization/<br>
 │<br>
 ├── data/<br>
 │ ├── cnn_input.json # CNN/DailyMail test samples<br>
-│ └── xsum_input.json # XSum test samples<br>
+│ ├── xsum_input.json # XSum test samples<br>
+│ ├── initial_prompts.json # Initial input prompts<br>
+│ └── round_*_prompts.json # Input prompts in round n<br>
 │<br>
 ├── results/ # All experimental outputs and figures<br>
-│ ├── round_*.json # Per-round summarization results<br>
+│ ├── round_*_results.json # Per-round summarization results<br>
 │ ├── meet_threshold.json # Prompts meeting threshold across rounds<br>
 │ ├── baseline.json # Baseline summarization results<br>
-│ └── ... # Other visualization charts<br>
+│ └── pic/ # Other visualization charts<br>
 │<br>
 ├── requirements.txt # Dependencies<br>
 └── README.md<br>

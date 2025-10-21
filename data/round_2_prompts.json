@@ -1,0 +1,22 @@
+[
+  {
+    "name": "instruction_based",
+    "text": "Summarize the following article clearly and briefly. Your summary should cover the main points in no more than three sentences."
+  },
+  {
+    "name": "zero_shot",
+    "text": "Please provide a brief overview capturing the main ideas and key events described in the article."
+  },
+  {
+    "name": "instruction_based",
+    "text": "Summarize the following article clearly and concisely. Your summary should cover the main points in no more than three sentences."
+  },
+  {
+    "name": "instruction_based",
+    "text": "Summarize the following article clearly and briefly. Your summary should cover the main points in no more than three sentences. Use simple sentences."
+  },
+  {
+    "name": "pattern_based",
+    "text": "From the article, identify three important facts or details and list them as bullet points."
+  }
+]
